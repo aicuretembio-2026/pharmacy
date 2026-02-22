@@ -1,0 +1,392 @@
+/* ===========================
+   다국어 언어별 CSS 최적화
+   각 언어의 글자 수와 표현 방식에 맞춘 레이아웃 조정
+   =========================== */
+
+/* 기본 설정 (한국어) */
+html[lang="ko"] {
+    /* 한국어 기본값 - 변경 없음 */
+}
+
+/* 영어 (약 120-150% 길이) */
+html[lang="en"] .card-title {
+    font-size: 0.95rem; /* 기본 1rem에서 5% 축소 */
+    line-height: 1.3;
+}
+
+html[lang="en"] .tech-card-title {
+    font-size: 1.05rem; /* 기본 1.1rem에서 5% 축소 */
+    line-height: 1.2;
+}
+
+html[lang="en"] p {
+    font-size: 0.95rem; /* 영어 긴 단어 대응 */
+}
+
+html[lang="en"] .btn {
+    padding: 10px 16px; /* 기본 12px 18px에서 축소 */
+    font-size: 0.9rem;
+}
+
+html[lang="en"] .page-subtitle {
+    font-size: 0.9rem;
+}
+
+/* 일본어 (약 90-110% 길이) */
+html[lang="ja"] {
+    font-family: 'Noto Sans JP', 'Noto Sans KR', sans-serif;
+}
+
+html[lang="ja"] .card-title {
+    font-size: 0.98rem;
+    line-height: 1.4;
+}
+
+html[lang="ja"] .tech-card-title {
+    font-size: 1.08rem;
+    line-height: 1.3;
+}
+
+html[lang="ja"] p {
+    line-height: 1.8; /* 일본어 가독성 향상 */
+}
+
+html[lang="ja"] .btn {
+    padding: 12px 20px; /* 일본어는 짧아서 패딩 증가 */
+}
+
+/* 중국어 간체 (약 60-80% 길이) */
+html[lang="zh-CN"] {
+    font-family: 'Noto Sans SC', 'Noto Sans KR', sans-serif;
+}
+
+html[lang="zh-CN"] .card-title {
+    font-size: 1.05rem; /* 중국어는 짧아서 크기 증가 */
+    letter-spacing: 0.5px;
+}
+
+html[lang="zh-CN"] .tech-card-title {
+    font-size: 1.15rem;
+    letter-spacing: 0.5px;
+}
+
+html[lang="zh-CN"] p {
+    line-height: 1.8;
+    letter-spacing: 0.3px; /* 중국어 가독성 */
+}
+
+html[lang="zh-CN"] .btn {
+    padding: 12px 24px; /* 중국어는 짧아서 패딩 증가 */
+    letter-spacing: 1px;
+}
+
+/* 중국어 번체 (약 60-80% 길이) */
+html[lang="zh-TW"] {
+    font-family: 'Noto Sans TC', 'Noto Sans KR', sans-serif;
+}
+
+html[lang="zh-TW"] .card-title {
+    font-size: 1.05rem;
+    letter-spacing: 0.5px;
+}
+
+html[lang="zh-TW"] .tech-card-title {
+    font-size: 1.15rem;
+    letter-spacing: 0.5px;
+}
+
+html[lang="zh-TW"] p {
+    line-height: 1.8;
+    letter-spacing: 0.3px;
+}
+
+html[lang="zh-TW"] .btn {
+    padding: 12px 24px;
+    letter-spacing: 1px;
+}
+
+/* 인도네시아어 (약 130-160% 길이) */
+html[lang="id"] .card-title {
+    font-size: 0.9rem; /* 기본 1rem에서 10% 축소 */
+    line-height: 1.3;
+}
+
+html[lang="id"] .tech-card-title {
+    font-size: 1rem; /* 기본 1.1rem에서 10% 축소 */
+    line-height: 1.2;
+}
+
+html[lang="id"] p {
+    font-size: 0.9rem; /* 인도네시아어 긴 단어 대응 */
+    line-height: 1.6;
+}
+
+html[lang="id"] .btn {
+    padding: 10px 14px; /* 패딩 축소 */
+    font-size: 0.85rem;
+}
+
+html[lang="id"] .page-subtitle {
+    font-size: 0.85rem;
+}
+
+html[lang="id"] h1 {
+    font-size: 1.8rem; /* 기본 2rem에서 축소 */
+}
+
+html[lang="id"] h2 {
+    font-size: 1.5rem; /* 기본 1.75rem에서 축소 */
+}
+
+html[lang="id"] h3 {
+    font-size: 1.2rem; /* 기본 1.3rem에서 축소 */
+}
+
+/* 스페인어 (약 120-150% 길이) */
+html[lang="es"] .card-title {
+    font-size: 0.95rem; /* 기본 1rem에서 5% 축소 */
+    line-height: 1.3;
+}
+
+html[lang="es"] .tech-card-title {
+    font-size: 1.05rem; /* 기본 1.1rem에서 5% 축소 */
+    line-height: 1.2;
+}
+
+html[lang="es"] p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+html[lang="es"] .btn {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+}
+
+html[lang="es"] .page-subtitle {
+    font-size: 0.9rem;
+}
+
+html[lang="es"] h1 {
+    font-size: 1.9rem;
+}
+
+/* 모바일 반응형 (480px 이하) */
+@media (max-width: 480px) {
+    /* 영어 모바일 */
+    html[lang="en"] .card-title {
+        font-size: 0.85rem;
+    }
+    
+    html[lang="en"] .tech-card-title {
+        font-size: 0.85rem;
+    }
+    
+    html[lang="en"] p {
+        font-size: 0.8rem;
+    }
+    
+    html[lang="en"] .btn {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+    
+    /* 일본어 모바일 */
+    html[lang="ja"] .card-title {
+        font-size: 0.88rem;
+    }
+    
+    html[lang="ja"] .tech-card-title {
+        font-size: 0.88rem;
+    }
+    
+    /* 중국어 모바일 (간체/번체 공통) */
+    html[lang="zh-CN"] .card-title,
+    html[lang="zh-TW"] .card-title {
+        font-size: 0.95rem;
+        letter-spacing: 0.3px;
+    }
+    
+    html[lang="zh-CN"] .tech-card-title,
+    html[lang="zh-TW"] .tech-card-title {
+        font-size: 0.95rem;
+        letter-spacing: 0.3px;
+    }
+    
+    html[lang="zh-CN"] .btn,
+    html[lang="zh-TW"] .btn {
+        padding: 10px 20px;
+    }
+    
+    /* 인도네시아어 모바일 */
+    html[lang="id"] .card-title {
+        font-size: 0.8rem;
+    }
+    
+    html[lang="id"] .tech-card-title {
+        font-size: 0.8rem;
+    }
+    
+    html[lang="id"] p {
+        font-size: 0.75rem;
+    }
+    
+    html[lang="id"] .btn {
+        padding: 8px 10px;
+        font-size: 0.75rem;
+    }
+    
+    html[lang="id"] h1 {
+        font-size: 1.5rem;
+    }
+    
+    html[lang="id"] h2 {
+        font-size: 1.25rem;
+    }
+    
+    /* 스페인어 모바일 */
+    html[lang="es"] .card-title {
+        font-size: 0.85rem;
+    }
+    
+    html[lang="es"] .tech-card-title {
+        font-size: 0.85rem;
+    }
+    
+    html[lang="es"] p {
+        font-size: 0.8rem;
+    }
+    
+    html[lang="es"] .btn {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+}
+
+/* 태블릿 반응형 (768px 이하) */
+@media (max-width: 768px) {
+    /* 영어 태블릿 */
+    html[lang="en"] .card-title {
+        font-size: 0.9rem;
+    }
+    
+    html[lang="en"] .tech-card-title {
+        font-size: 0.95rem;
+    }
+    
+    /* 인도네시아어 태블릿 */
+    html[lang="id"] .card-title {
+        font-size: 0.85rem;
+    }
+    
+    html[lang="id"] .tech-card-title {
+        font-size: 0.9rem;
+    }
+    
+    html[lang="id"] p {
+        font-size: 0.85rem;
+    }
+    
+    html[lang="id"] h1 {
+        font-size: 1.6rem;
+    }
+    
+    /* 스페인어 태블릿 */
+    html[lang="es"] .card-title {
+        font-size: 0.9rem;
+    }
+    
+    html[lang="es"] .tech-card-title {
+        font-size: 0.95rem;
+    }
+}
+
+/* 네비게이션 언어별 최적화 */
+html[lang="en"] nav a,
+html[lang="id"] nav a,
+html[lang="es"] nav a {
+    font-size: 0.75rem; /* 긴 언어는 네비게이션 폰트 축소 */
+}
+
+html[lang="zh-CN"] nav a,
+html[lang="zh-TW"] nav a {
+    font-size: 0.9rem; /* 짧은 언어는 네비게이션 폰트 증가 */
+    letter-spacing: 1px;
+}
+
+/* 버튼 텍스트 줄바꿈 방지 */
+.btn {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 긴 언어 버튼 예외 (줄바꿈 허용) */
+html[lang="en"] .btn,
+html[lang="id"] .btn,
+html[lang="es"] .btn,
+html[lang="fr"] .btn {
+    white-space: normal;
+    min-height: 40px;
+}
+
+/* 카드 제목 줄바꿈 처리 */
+.card-title {
+    word-break: keep-all; /* 한중일 언어 */
+    overflow-wrap: break-word; /* 영어 등 긴 단어 */
+}
+
+html[lang="en"] .card-title,
+html[lang="id"] .card-title,
+html[lang="es"] .card-title,
+html[lang="fr"] .card-title {
+    word-break: break-word; /* 영어권 언어는 단어 중간 줄바꿈 허용 */
+}
+
+/* 페이지 제목 언어별 최적화 */
+html[lang="id"] .page-header h2,
+html[lang="fr"] .page-header h2 {
+    font-size: 1.4rem;
+}
+
+html[lang="zh-CN"] .page-header h2,
+html[lang="zh-TW"] .page-header h2 {
+    letter-spacing: 2px;
+}
+
+/* 리스트 아이템 언어별 최적화 */
+html[lang="id"] li,
+html[lang="es"] li,
+html[lang="fr"] li {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+html[lang="zh-CN"] li,
+html[lang="zh-TW"] li {
+    letter-spacing: 0.5px;
+}
+
+/* 입력 필드 플레이스홀더 언어별 최적화 */
+html[lang="en"] input::placeholder,
+html[lang="en"] textarea::placeholder,
+html[lang="id"] input::placeholder,
+html[lang="id"] textarea::placeholder,
+html[lang="es"] input::placeholder,
+html[lang="es"] textarea::placeholder {
+    font-size: 0.85rem;
+}
+
+/* 뱃지 언어별 최적화 */
+html[lang="en"] .badge,
+html[lang="id"] .badge,
+html[lang="es"] .badge {
+    padding: 4px 8px;
+    font-size: 0.75rem;
+}
+
+html[lang="zh-CN"] .badge,
+html[lang="zh-TW"] .badge {
+    padding: 6px 12px;
+    letter-spacing: 0.5px;
+}

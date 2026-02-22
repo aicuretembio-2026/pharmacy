@@ -1,0 +1,306 @@
+/* ==============================
+   프리미엄 다이슨 스타일 v2
+   강화된 글래스모피즘 & 네온 효과
+   ============================== */
+
+/* 배경 이미지 레이어 */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/premium/3-iphone-analysis.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0.25) blur(4px);
+    z-index: -2;
+}
+
+/* 다크 오버레이 */
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(
+        180deg,
+        rgba(10, 10, 10, 0.5) 0%,
+        rgba(10, 10, 10, 0.7) 50%,
+        rgba(10, 10, 10, 0.85) 100%
+    );
+    z-index: -1;
+}
+
+/* 앱 컨테이너 */
+.app-container {
+    position: relative;
+    z-index: 1;
+}
+
+/* 헤더 글래스 효과 */
+header {
+    background: rgba(26, 26, 26, 0.6) !important;
+    backdrop-filter: blur(20px) !important;
+    border-bottom: 1px solid rgba(255, 23, 68, 0.2) !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* 로고 네온 효과 */
+.logo {
+    filter: drop-shadow(0 0 15px rgba(255, 23, 68, 0.6)) !important;
+    transition: filter 0.3s ease;
+}
+
+.logo:hover {
+    filter: drop-shadow(0 0 25px rgba(255, 23, 68, 0.9)) !important;
+}
+
+/* 페이지 헤더 */
+.page-header {
+    background: rgba(26, 26, 26, 0.7) !important;
+    backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(255, 23, 68, 0.3) !important;
+    border-radius: 20px !important;
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.5),
+        0 0 30px rgba(255, 23, 68, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+}
+
+.page-header h1 {
+    text-shadow: 
+        0 0 20px rgba(255, 23, 68, 0.6),
+        0 0 40px rgba(255, 23, 68, 0.3),
+        0 2px 4px rgba(0, 0, 0, 0.8) !important;
+    background: linear-gradient(135deg, #FF1744, #FF4569);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.page-subtitle {
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8) !important;
+}
+
+/* 카드 글래스모피즘 강화 */
+.card {
+    background: rgba(26, 26, 26, 0.75) !important;
+    backdrop-filter: blur(25px) !important;
+    border: 1px solid rgba(255, 23, 68, 0.3) !important;
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.5),
+        0 0 30px rgba(255, 23, 68, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.card:hover {
+    background: rgba(26, 26, 26, 0.85) !important;
+    border-color: rgba(255, 23, 68, 0.6) !important;
+    box-shadow: 
+        0 12px 48px rgba(0, 0, 0, 0.6),
+        0 0 50px rgba(255, 23, 68, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.15) !important;
+    transform: translateY(-6px) scale(1.02) !important;
+}
+
+/* 카드 제목 네온 */
+.card-title {
+    text-shadow: 
+        0 0 10px rgba(255, 23, 68, 0.5),
+        0 2px 4px rgba(0, 0, 0, 0.8) !important;
+}
+
+/* 아이콘 네온 글로우 */
+.icon,
+.card-header .icon {
+    background: linear-gradient(135deg, rgba(255, 23, 68, 0.2), rgba(255, 69, 105, 0.2)) !important;
+    box-shadow: 
+        0 0 20px rgba(255, 23, 68, 0.4),
+        inset 0 0 10px rgba(255, 23, 68, 0.1) !important;
+    transition: all 0.3s ease !important;
+}
+
+.icon:hover,
+.card:hover .icon {
+    box-shadow: 
+        0 0 30px rgba(255, 23, 68, 0.6),
+        inset 0 0 15px rgba(255, 23, 68, 0.2) !important;
+    transform: scale(1.1) !important;
+}
+
+/* 버튼 네온 효과 강화 */
+.btn-primary,
+.btn-red-accent,
+button[type="button"] {
+    background: linear-gradient(135deg, #FF1744, #FF4569) !important;
+    border: 1px solid rgba(255, 23, 68, 0.5) !important;
+    box-shadow: 
+        0 8px 24px rgba(220, 20, 60, 0.5),
+        0 0 40px rgba(220, 20, 60, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.btn-primary:hover,
+.btn-red-accent:hover,
+button[type="button"]:hover {
+    background: linear-gradient(135deg, #FF4569, #FF1744) !important;
+    box-shadow: 
+        0 12px 36px rgba(220, 20, 60, 0.7),
+        0 0 60px rgba(220, 20, 60, 0.5),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+    transform: translateY(-2px) scale(1.02) !important;
+}
+
+.btn-primary:active,
+.btn-red-accent:active,
+button[type="button"]:active {
+    transform: translateY(0) scale(0.98) !important;
+}
+
+/* 카메라 프레임 글래스 */
+#camera-frame,
+#captured-image-display,
+video,
+canvas {
+    background: rgba(26, 26, 26, 0.8) !important;
+    backdrop-filter: blur(15px) !important;
+    border: 2px solid rgba(255, 23, 68, 0.5) !important;
+    border-radius: 20px !important;
+    box-shadow: 
+        0 0 50px rgba(255, 23, 68, 0.5),
+        inset 0 0 30px rgba(255, 23, 68, 0.1) !important;
+}
+
+/* 결과 카드 */
+.result-card {
+    background: rgba(26, 26, 26, 0.8) !important;
+    backdrop-filter: blur(25px) !important;
+    border: 1px solid rgba(255, 23, 68, 0.4) !important;
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.6),
+        0 0 30px rgba(255, 23, 68, 0.3) !important;
+}
+
+/* 프로그레스 바 네온 */
+.progress-bar,
+.progress-fill {
+    background: linear-gradient(90deg, #FF1744, #FF4569) !important;
+    box-shadow: 
+        0 0 20px rgba(220, 20, 60, 0.6),
+        0 0 40px rgba(220, 20, 60, 0.3) !important;
+}
+
+/* 로딩 스피너 네온 */
+.loading-spinner,
+.loading-spinner::after {
+    border-top-color: #FF1744 !important;
+    box-shadow: 
+        0 0 20px rgba(220, 20, 60, 0.8),
+        0 0 40px rgba(220, 20, 60, 0.4) !important;
+}
+
+/* 입력 필드 글래스 */
+input,
+select,
+textarea {
+    background: rgba(26, 26, 26, 0.7) !important;
+    backdrop-filter: blur(15px) !important;
+    border: 1px solid rgba(255, 23, 68, 0.3) !important;
+    color: var(--white-primary) !important;
+    transition: all 0.3s ease !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    background: rgba(26, 26, 26, 0.85) !important;
+    border-color: rgba(255, 23, 68, 0.6) !important;
+    box-shadow: 
+        0 0 20px rgba(255, 23, 68, 0.4),
+        inset 0 0 10px rgba(255, 23, 68, 0.1) !important;
+    outline: none !important;
+}
+
+/* 그리드 레이아웃 */
+.grid {
+    gap: 24px !important;
+}
+
+/* 애니메이션 */
+@keyframes premiumFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card,
+.page-header {
+    animation: premiumFadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 네온 펄스 */
+@keyframes neonPulse {
+    0%, 100% {
+        box-shadow: 
+            0 0 20px rgba(255, 23, 68, 0.4),
+            0 0 40px rgba(255, 23, 68, 0.2);
+    }
+    50% {
+        box-shadow: 
+            0 0 40px rgba(255, 23, 68, 0.6),
+            0 0 80px rgba(255, 23, 68, 0.3);
+    }
+}
+
+.logo,
+.icon {
+    animation: neonPulse 3s ease-in-out infinite;
+}
+
+/* 모바일 최적화 */
+@media (max-width: 768px) {
+    body::before {
+        filter: brightness(0.2) blur(3px);
+    }
+    
+    body::after {
+        background: linear-gradient(
+            180deg,
+            rgba(10, 10, 10, 0.6) 0%,
+            rgba(10, 10, 10, 0.8) 50%,
+            rgba(10, 10, 10, 0.9) 100%
+        );
+    }
+    
+    .card {
+        background: rgba(26, 26, 26, 0.85) !important;
+        backdrop-filter: blur(20px) !important;
+    }
+    
+    header {
+        background: rgba(26, 26, 26, 0.75) !important;
+    }
+}
+
+/* 작은 모바일 */
+@media (max-width: 375px) {
+    body::before {
+        filter: brightness(0.15) blur(2px);
+    }
+    
+    .card {
+        background: rgba(26, 26, 26, 0.9) !important;
+    }
+}

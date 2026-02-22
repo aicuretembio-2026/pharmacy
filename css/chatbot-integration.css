@@ -1,0 +1,135 @@
+/* ===================================================================
+   🤖 AI 챗봇 상담 박스 스타일
+   진단 페이지 챗봇 통합 스타일
+   작성일: 2026-02-16
+   =================================================================== */
+
+/* ===========================
+   챗봇 카드 메인 스타일
+   =========================== */
+
+.chatbot-card {
+    /* 기존 카드와 동일한 스타일 적용 */
+    position: relative;
+    overflow: hidden;
+}
+
+/* 기존 카드 스타일과 통일 */
+
+/* 호버 효과는 기존 .card 스타일 상속 */
+
+/* ===========================
+   챗봇 아이콘 (이모지)
+   =========================== */
+
+.chatbot-emoji {
+    font-size: 2.5rem;
+    line-height: 1;
+    filter: grayscale(0) !important; /* 이모지 색상 유지 */
+}
+
+/* 아이콘 호버는 기존 .card .icon 호버와 동일 */
+
+/* ===========================
+   챗봇 카드 헤더
+   =========================== */
+
+/* 헤더는 기존 .card-header 스타일 상속 */
+
+/* 타이틀은 기존 .card-title 스타일 상속 */
+
+/* ===========================
+   챗봇 카드 본문
+   =========================== */
+
+/* 본문은 기존 .card-body 스타일 상속 */
+
+/* 설명은 기존 .card p 스타일 상속 */
+.chatbot-description {
+    margin-bottom: 20px;
+}
+
+/* ===========================
+   키워드 태그 (사용 안 함 - HTML에서 제거됨)
+   =========================== */
+
+/* 
+.chatbot-keywords {
+    display: none;
+}
+*/
+
+/* ===========================
+   챗봇 CTA 버튼 (기존 btn-primary와 동일한 스타일)
+   =========================== */
+
+.btn-chatbot {
+    background: linear-gradient(135deg, #FF0000 0%, #DC143C 100%);
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 4px 20px rgba(220, 20, 60, 0.3);
+    width: auto;
+}
+
+.btn-chatbot:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(220, 20, 60, 0.4);
+}
+
+.btn-chatbot:active {
+    transform: translateY(0);
+}
+
+.btn-chatbot .btn-icon {
+    width: 18px;
+    height: 18px;
+    display: none; /* 아이콘 숨김 - 기존 버튼과 동일하게 */
+}
+
+/* ===========================
+   반응형 레이아웃
+   =========================== */
+
+/* PC 버전 (2x2 그리드) - 기존 카드와 동일 */
+@media (min-width: 769px) {
+    .chatbot-emoji {
+        font-size: 2.5rem;
+    }
+}
+
+/* 태블릿 버전 */
+@media (max-width: 768px) and (min-width: 481px) {
+    .chatbot-emoji {
+        font-size: 2.2rem;
+    }
+}
+
+/* 모바일 버전 */
+@media (max-width: 480px) {
+    .chatbot-emoji {
+        font-size: 2rem;
+    }
+}
+
+/* ===========================
+   접근성 - 기존 버튼과 동일
+   =========================== */
+
+/* 감소된 모션 선호 */
+@media (prefers-reduced-motion: reduce) {
+    .btn-chatbot {
+        transition: none;
+    }
+}
+

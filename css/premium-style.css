@@ -1,0 +1,216 @@
+/* ==============================
+   프리미엄 다이슨 스타일 추가
+   - 홀로그램 배경 이미지
+   - 글래스모피즘 UI
+   - 네온 악센트
+   ============================== */
+
+/* 배경 이미지 컨테이너 */
+.premium-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.premium-background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    filter: brightness(0.3) blur(3px);
+}
+
+.premium-background-image.active {
+    opacity: 1;
+}
+
+/* 페이지별 배경 이미지 - 기본 설정 */
+.premium-background-image {
+    background-image: url('../images/premium/3-iphone-analysis.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* 글래스모피즘 오버레이 */
+.glass-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(
+        180deg,
+        rgba(10, 10, 10, 0.4) 0%,
+        rgba(10, 10, 10, 0.6) 50%,
+        rgba(10, 10, 10, 0.8) 100%
+    );
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* 앱 컨테이너 z-index 조정 */
+.app-container {
+    position: relative;
+    z-index: 2;
+}
+
+/* 카드 글래스모피즘 효과 강화 */
+.card {
+    background: rgba(26, 26, 26, 0.7) !important;
+    backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(255, 23, 68, 0.3) !important;
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.4),
+        0 0 30px rgba(255, 23, 68, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+}
+
+.card:hover {
+    border-color: rgba(255, 23, 68, 0.6) !important;
+    box-shadow: 
+        0 12px 48px rgba(0, 0, 0, 0.5),
+        0 0 40px rgba(255, 23, 68, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.15) !important;
+    transform: translateY(-4px) !important;
+}
+
+/* 페이지 헤더 글래스 효과 */
+.page-header {
+    background: rgba(26, 26, 26, 0.6) !important;
+    backdrop-filter: blur(15px) !important;
+    border: 1px solid rgba(255, 23, 68, 0.2);
+    border-radius: 20px;
+    padding: 40px 20px;
+    margin-bottom: 30px;
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.4),
+        0 0 20px rgba(255, 23, 68, 0.15);
+}
+
+.page-header h1 {
+    text-shadow: 
+        0 0 20px rgba(255, 23, 68, 0.5),
+        0 0 40px rgba(255, 23, 68, 0.3);
+}
+
+/* 카메라 프레임 글래스 효과 */
+#camera-frame,
+#captured-image-display {
+    background: rgba(26, 26, 26, 0.8) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 2px solid rgba(255, 23, 68, 0.5) !important;
+    box-shadow: 
+        0 0 40px rgba(255, 23, 68, 0.4),
+        inset 0 0 30px rgba(255, 23, 68, 0.1);
+}
+
+/* 버튼 네온 효과 강화 */
+.btn-primary,
+.btn-red-accent {
+    box-shadow: 
+        0 8px 24px rgba(220, 20, 60, 0.4),
+        0 0 30px rgba(220, 20, 60, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+}
+
+.btn-primary:hover,
+.btn-red-accent:hover {
+    box-shadow: 
+        0 12px 32px rgba(220, 20, 60, 0.6),
+        0 0 40px rgba(220, 20, 60, 0.5),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+}
+
+/* 결과 카드 네온 테두리 */
+.result-card {
+    background: rgba(26, 26, 26, 0.75) !important;
+    backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(255, 23, 68, 0.4) !important;
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.5),
+        0 0 25px rgba(255, 23, 68, 0.25);
+}
+
+/* 로딩 애니메이션 네온 효과 */
+.loading-spinner::after {
+    box-shadow: 
+        0 0 20px rgba(220, 20, 60, 0.8),
+        0 0 40px rgba(220, 20, 60, 0.4);
+}
+
+/* 프로그레스 바 네온 효과 */
+.progress-bar {
+    background: linear-gradient(
+        90deg,
+        rgba(220, 20, 60, 0.8),
+        rgba(255, 23, 68, 1)
+    ) !important;
+    box-shadow: 
+        0 0 20px rgba(220, 20, 60, 0.6),
+        0 0 40px rgba(220, 20, 60, 0.3);
+}
+
+/* 모바일 최적화 */
+@media (max-width: 768px) {
+    .premium-background-image {
+        filter: brightness(0.25) blur(2px);
+    }
+    
+    .glass-overlay {
+        background: linear-gradient(
+            180deg,
+            rgba(10, 10, 10, 0.5) 0%,
+            rgba(10, 10, 10, 0.7) 50%,
+            rgba(10, 10, 10, 0.85) 100%
+        );
+    }
+    
+    .card {
+        background: rgba(26, 26, 26, 0.8) !important;
+        backdrop-filter: blur(15px) !important;
+    }
+}
+
+/* 애니메이션: 페이드 인 */
+@keyframes premiumFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: premiumFadeIn 0.6s ease-out;
+}
+
+/* 네온 펄스 애니메이션 */
+@keyframes neonPulse {
+    0%, 100% {
+        box-shadow: 
+            0 0 20px rgba(255, 23, 68, 0.3),
+            0 0 40px rgba(255, 23, 68, 0.2);
+    }
+    50% {
+        box-shadow: 
+            0 0 30px rgba(255, 23, 68, 0.5),
+            0 0 60px rgba(255, 23, 68, 0.3);
+    }
+}
+
+.btn-primary:active,
+.btn-red-accent:active {
+    animation: neonPulse 0.3s ease-in-out;
+}

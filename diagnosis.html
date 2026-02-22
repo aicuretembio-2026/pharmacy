@@ -1,0 +1,1559 @@
+<!DOCTYPE html>
+<!-- 
+╔══════════════════════════════════════════════════════════════════╗
+║  🚀 CURETEMBIO V26.0 PERFECT 10 - FR COMPLETE                   ║
+║  📅 Build Date: 2026-02-04 (Français Added)                     ║
+║  ✅ V26.0: 10개 언어 완성 (Français 추가 완료)                ║
+║  🌍 한국어, English, 日本語, 中文, ภาษาไทย, Tiếng Việt       ║
+║  🎯 Bahasa Indonesia, Bahasa Melayu, Español, Français         ║
+╚══════════════════════════════════════════════════════════════════╝
+-->
+<html lang="ko" translate="no">
+<head>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const urlLang = urlParams.get('lang');
+        
+        if (urlLang) {
+            console.log('⚡ [최우선 URL 언어]:', urlLang);
+            localStorage.setItem('language', urlLang);
+            localStorage.setItem('landingLanguage', urlLang);
+            localStorage.setItem('preferred_language', urlLang);
+        }
+    </script>
+    <meta charset="UTF-8">
+     <!-- ⚡ 최우선: URL 언어 파라미터 (모든 스크립트보다 먼저!) -->
+    <script>
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const urlLang = urlParams.get('lang');
+            if (urlLang) {
+                console.log('⚡ [최우선] URL 언어:', urlLang);
+                localStorage.setItem('language', urlLang);
+                localStorage.setItem('landingLanguage', urlLang);
+                localStorage.setItem('preferred_language', urlLang);
+            }
+        })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="CURETEMBIO AI 피부진단 - 10초 만에 10가지 피부 지표 분석. 피부과에서 시작해 약국이 인정한 EXOBIO 357앰플 맞춤 추천. 10개 언어 지원 (Français 포함). 100% 무료.">
+    
+    <!-- 🚫 Chrome 자동 번역 방지 -->
+    <meta name="google" content="notranslate">
+    
+    <!-- 🚀 v26.0 - BUILD 20260204-FR-COMPLETE -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="build-id" content="20260204-FR-COMPLETE">
+    
+    <title>CURETEMBIO - AI 기반 10가지 피부진단</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo-main.png">
+    <link rel="apple-touch-icon" href="images/logo-main.png">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Open Graph (소셜 미디어 공유용) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CURETEMBIO - AI 기반 10가지 피부진단 | 10초 무료 진단">
+    <meta property="og:description" content="AI가 10초 만에 피부 상태를 분석하고 맞춤형 제품을 추천합니다. 10개 언어 지원 (Français 포함), 100% 무료. 피부과·약국이 인정한 EXOBIO 357앰플.">
+    <meta property="og:image" content="https://curetembio.xyz/images/landing/hero-split-screen.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://curetembio.xyz/">
+    <meta property="og:site_name" content="CURETEMBIO">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CURETEMBIO - AI 기반 10가지 피부진단 | 10초 무료 진단">
+    <meta name="twitter:description" content="AI가 10초 만에 피부 상태를 분석하고 맞춤형 제품을 추천합니다. 10개 언어 지원 (Français 포함), 100% 무료.">
+    <meta name="twitter:image" content="https://curetembio.xyz/images/landing/hero-split-screen.jpg">
+    
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- 스타일시트 -->
+    <link rel="stylesheet" href="css/style.css?v=20260130-FINAL-I18N">
+    <link rel="stylesheet" href="css/tech-cards.css?v=20260129-HOTFIX">
+    <link rel="stylesheet" href="css/lang-optimization.css?v=20260129-HOTFIX">
+    <link rel="stylesheet" href="css/premium-v2.css?v=20260129-HOTFIX">
+    <link rel="stylesheet" href="css/chatbot-integration.css?v=20260216">
+    
+    <!-- FAQ Schema.org 구조화된 데이터 (SEO 최적화) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "AI 피부 진단은 무엇인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CURETEMBIO AI 피부 진단은 인공지능 기술을 활용하여 셀카 한 장으로 피부 상태를 10가지 지표(톤 균일도, 피부 밝기, 색소 침착, 주름 깊이, 탄력도, 수분 함량, 민감도, 홍조 정도, 여드름 발생, 모공 상태)로 분석하는 시스템입니다. 10초 만에 즉시 분석 결과와 맞춤형 제품 추천을 받을 수 있습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "정확도는 어느 정도인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AI 얼굴 인식 기술과 딥러닝 알고리즘을 기반으로 피부 상태를 분석하며, 지속적으로 축적되는 사용자 데이터를 통해 정확도를 개선하고 있습니다. 단, AI 분석은 참고용이며, 정확한 진단이 필요한 경우 피부과 전문의 상담을 권장합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "어떤 언어를 지원하나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "현재 한국어, 영어, 일본어, 중국어(간체/번체), 태국어, 베트남어, 인도네시아어, 말레이시아어, 스페인어 등 총 10개 언어를 지원합니다. 사이트 접속 시 브라우저 언어를 자동으로 감지하여 해당 언어로 표시됩니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "사용료가 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CURETEMBIO AI 피부 진단 서비스는 100% 무료입니다. 회원가입, 결제, 구독 없이 누구나 무료로 이용할 수 있습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "몇 번이나 진단받을 수 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "제한 없이 원하는 만큼 진단받을 수 있습니다. 정기적으로 촬영하여 피부 변화를 추적하고 관리하는 것을 권장합니다. (기기에 최대 10개 기록 저장 가능)"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "추천받은 제품은 어디서 구매하나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "EXOBIO 제품은 공식 쇼핑몰과 전국 약국, 피부과에서 구매 가능합니다. 정보 페이지에서 공식 쇼핑몰 링크를 확인하실 수 있습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "제품을 여러 개 함께 사용해도 되나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "네, 가능합니다. 더블UP 시스템은 프리미엄 라인과 RED 라인을 조합하여 복합적인 피부 문제를 동시에 케어하는 방식입니다. 각 제품을 주 3~4회 번갈아 사용하면 효과적입니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "기존 제품과 함께 사용해도 되나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "네, EXOBIO 앰플은 클렌징 후 스킨케어 첫 단계에 사용하는 제품이므로, 기존에 사용하시던 스킨, 로션, 크림 등은 그대로 사용하셔도 됩니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "효과를 보려면 얼마나 사용해야 하나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "개인차가 있으나, 일반적으로 주 3~4회 집중 사용 시 8~12주 내 눈에 띄는 개선을 경험하실 수 있습니다. 복합 케어의 경우 12~16주 정도 꾸준히 사용하는 것을 권장합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "민감성 피부도 사용할 수 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "EXOBIO 제품은 무알콜, 무향료, 무색소(3無) 제품으로 민감성 피부도 사용 가능합니다. 다만 개인의 피부 상태에 따라 다를 수 있으므로, 처음 사용 시 소량으로 테스트 후 사용하시길 권장합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "EXOBIO 357 앰플이란 무엇인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "EXOBIO 357 앰플은 피부과에서 시작해 약국이 인정한 엑소좀 기반 스킨케어 제품입니다. 피부 탄력, 미백, 진정, 보습 등 다양한 피부 고민을 해결할 수 있도록 개발되었으며, 스킨케어 첫 단계에 사용하여 효과를 UP 시킵니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "프리미엄 라인과 RED 라인의 차이는 무엇인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "프리미엄 라인은 집중 케어가 필요한 피부를 위한 고농축 제품이며, RED 라인은 데일리 케어 및 예방 관리용 제품입니다. 피부 상태에 따라 단일 또는 조합(더블UP)하여 사용할 수 있습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "3번, 5번, 7번은 무엇을 의미하나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "3번은 미백(브라이트닝), 5번은 탄력(엘라스틴), 7번은 진정/보습(배리어) 기능에 특화된 제품 번호입니다. AI 분석 결과에 따라 가장 적합한 번호의 제품이 추천됩니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "29가지 조합이란 무엇인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "EXOBIO 프리미엄(3종)과 RED(3종) 라인의 단일 사용 및 조합을 통해 총 29가지 맞춤형 케어 조합이 가능합니다. AI가 사용자의 피부 상태를 분석하여 최적의 조합을 자동으로 추천합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "내 사진이 서버에 저장되나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "아니요. 모든 촬영 이미지와 분석 데이터는 사용자의 기기(브라우저)에만 암호화되어 저장되며, 서버로 전송되지 않습니다. 개인정보 보호를 최우선으로 하고 있습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "데이터를 삭제할 수 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "네, 기록 페이지에서 '전체 삭제' 버튼을 눌러 언제든지 모든 촬영 기록과 분석 데이터를 삭제할 수 있습니다. 정보 페이지에서 '내 데이터 전체 삭제'를 통해 완전히 삭제할 수도 있습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "개인정보는 어떻게 보호되나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CURETEMBIO는 개인정보 보호를 최우선으로 합니다. 촬영 이미지와 분석 데이터는 사용자 기기에만 저장되며, 서버로 전송되지 않습니다. 전문가 상담 요청 시에만 입력하신 이름, 이메일, 상담 내용이 암호화되어 전송됩니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "모바일에서도 사용할 수 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "네, CURETEMBIO는 모바일에 최적화되어 있습니다. 스마트폰, 태블릿, PC 등 모든 기기에서 접속하여 사용할 수 있으며, 카메라 권한만 허용하시면 즉시 진단받을 수 있습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "고객 지원은 어떻게 받나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "공식 이메일(curetembio@gmail.com)로 문의하시면 영업일 기준 1~2일 내에 답변드립니다. 운영시간은 평일 10:00~17:00입니다. 정보 페이지에서 전문가 상담을 요청하실 수도 있습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "약국이나 피부과에서도 이용할 수 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "네, 전국 약국 및 피부과에서 CURETEMBIO AI 피부 진단 서비스를 도입하고 있습니다. QR 코드를 스캔하여 고객에게 즉시 피부 분석 서비스를 제공할 수 있습니다. 제휴 문의는 공식 이메일로 연락주세요."
+          }
+        }
+      ]
+    }
+    </script>
+    
+    <!-- FAQ 스타일 -->
+    <style>
+        /* FAQ 아코디언 호버 효과 */
+        .faq-item:hover {
+            background: rgba(220, 20, 60, 0.1) !important;
+            border-color: rgba(220, 20, 60, 0.5) !important;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(220, 20, 60, 0.2);
+        }
+        
+        .faq-item[open] {
+            background: rgba(220, 20, 60, 0.12) !important;
+            border-color: var(--red-primary) !important;
+        }
+        
+        .faq-item summary::marker {
+            content: '';
+        }
+        
+        .faq-item summary::before {
+            content: '▶';
+            color: var(--red-primary);
+            margin-right: 10px;
+            transition: transform 0.3s ease;
+            display: inline-block;
+        }
+        
+        .faq-item[open] summary::before {
+            transform: rotate(90deg);
+        }
+        
+        .faq-item summary:hover {
+            color: var(--red-primary) !important;
+        }
+        
+        /* 모바일 최적화 */
+        @media (max-width: 768px) {
+            .faq-item {
+                padding: 15px !important;
+            }
+            
+            .faq-item summary {
+                font-size: 0.95rem !important;
+            }
+            
+            .faq-item div {
+                font-size: 0.9rem !important;
+            }
+        }
+    </style>
+ <!-- 텍스트 오버플로우 수정 - 스크롤 버전 -->
+    <style>
+        /* 추천 박스 스크롤 처리 */
+        .recommendation-reason,
+        .user-problem,
+        .care-recommendation,
+        [class*="recommendation"] {
+            max-height: 200px !important;
+            overflow-y: auto !important;
+            overflow-x: hidden !important;
+            word-wrap: break-word !important;
+            word-break: break-word !important;
+            padding: 10px !important;
+            box-sizing: border-box !important;
+        }
+        
+        /* 추천 박스 내부 텍스트 */
+        .recommendation-box div,
+        .recommendation-box p,
+        .recommendation-box span {
+            word-wrap: break-word !important;
+            word-break: break-word !important;
+        }
+        
+        /* 스크롤바 스타일 */
+        .recommendation-reason::-webkit-scrollbar,
+        .user-problem::-webkit-scrollbar,
+        .care-recommendation::-webkit-scrollbar {
+            width: 6px;
+        }
+        
+        .recommendation-reason::-webkit-scrollbar-thumb,
+        .user-problem::-webkit-scrollbar-thumb,
+        .care-recommendation::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 3px;
+        }
+        
+        .recommendation-reason::-webkit-scrollbar-track,
+        .user-problem::-webkit-scrollbar-track,
+        .care-recommendation::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+            /* 프랑스어 전용 - 추천 박스 폰트 크기 조정 */
+        html[lang="fr"] .recommendation-reason,
+        html[lang="fr"] .user-problem,
+        html[lang="fr"] .care-recommendation {
+            font-size: 0.85em !important;
+            line-height: 1.3 !important;
+        }
+        
+        /* 프랑스어 전용 - 빨간 박스 내부 텍스트 */
+        html[lang="fr"] .recommendation-box div,
+        html[lang="fr"] .recommendation-box p,
+        html[lang="fr"] .recommendation-box span {
+            font-size: 0.85em !important;
+                  }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <!-- 헤더 -->
+        <header>
+            <div class="header-content">
+                <div class="logo-container-center" onclick="navigateTo('home')" style="cursor: pointer;">
+                    <img src="images/logo-lineart-black-bg.png" alt="CURETEMBIO" class="logo" translate="no">
+                </div>
+                
+                <!-- 언어 선택기 (10개 언어: 한국어, English, 日本語, 中文, ภาษาไทย, Tiếng Việt, Bahasa Indonesia, Bahasa Melayu, Español, Français) -->
+                <div class="language-selector">
+                    <select id="language-selector" onchange="changeLanguage(this.value)" style="
+                        background: rgba(220, 20, 60, 0.1);
+                        color: var(--white-primary);
+                        border: 1px solid var(--red-primary);
+                        padding: 8px 12px;
+                        border-radius: 8px;
+                        font-size: 0.9rem;
+                        cursor: pointer;
+                        outline: none;
+                        font-weight: 500;
+                        min-width: 140px;
+                        width: auto;
+                    ">
+                        <option value="ko">한국어</option>
+                        <option value="en">English</option>
+                        <option value="ja">日本語</option>
+                        <option value="zh-TW">中文</option>
+                        <option value="th">ภาษาไทย</option>
+                        <option value="vi">Tiếng Việt</option>
+                        <option value="id">Bahasa Indonesia</option>
+                        <option value="ms">Bahasa Melayu</option>
+                        <option value="es">Español</option>
+                        <option value="fr">Français</option>
+                    </select>
+                </div>
+            </div>
+        </header>
+
+        <!-- 페이지: 홈 -->
+        <div id="page-home" class="page active">
+            <div class="page-header">
+                <h1 data-i18n="app_title">AI 피부 진단 시스템</h1>
+                <p class="page-subtitle" data-i18n="app_subtitle">당신의 피부 건강을 AI가 분석합니다</p>
+            </div>
+
+            <div class="grid grid-2">
+                <div class="card card-red-accent">
+                    <div class="card-header">
+                        <div class="icon">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <h3 class="card-title" data-i18n="home_capture_title">피부 촬영</h3>
+                    </div>
+                    <div class="card-body">
+                        <p data-i18n="home_capture_desc">고화질 카메라로 피부를 촬영하면 AI가 즉시 분석합니다.</p>
+                        <button class="btn btn-primary mt-2" onclick="navigateTo('capture')">
+                            <i class="fas fa-camera"></i> <span data-i18n="home_capture_button">바로 촬영하기</span>
+                        </button>
+                    </div>
+                </div>
+<!-- AI 챗봇 상담 박스 -->
+<div class="card card-red-accent chatbot-card">
+    <div class="card-header">
+        <div class="icon">
+            <span class="chatbot-emoji">🤖</span>
+        </div>
+        <h3 class="card-title">
+            <span data-i18n="chatbot.title">AI 챗봇 상담사</span>
+        </h3>
+    </div>
+    <div class="card-body">
+        <p class="chatbot-description" data-i18n="chatbot.description">
+            AI 피부 상담사가 키워드 Q&A 방식으로 자세한 상담을 받아보세요.
+        </p>
+        <a href="https://chatbot.curetembio.xyz/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-chatbot mt-2">
+            <i class="fas fa-comments"></i>
+            <span data-i18n="chatbot.cta">바로 AI 챗봇 상담하기</span>
+        </a>
+    </div>
+</div>
+                
+                <div class="card card-red-accent">
+                    <div class="card-header">
+                        <div class="icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="card-title" data-i18n="home_history_title">변화 추적</h3>
+                    </div>
+                    <div class="card-body">
+                        <p data-i18n="home_history_desc">시간에 따른 피부 변화를 기록하고 비교해보세요.</p>
+                        <button class="btn btn-primary mt-2" onclick="navigateTo('history')">
+                            <i class="fas fa-arrow-right"></i> <span data-i18n="home_history_button">보기</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card card-red-accent">
+                    <div class="card-header">
+                        <div class="icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h3 class="card-title" data-i18n="home_consult_title">전문가 상담</h3>
+                    </div>
+                    <div class="card-body">
+                        <p data-i18n="home_consult_desc"><span translate="no">CURETEMBIO</span> 연구소의 전문가 상담을 받아보세요.</p>
+                        <button class="btn btn-primary mt-2" onclick="navigateTo('consult')">
+                            <i class="fas fa-arrow-right"></i> <span data-i18n="home_consult_button">상담 요청</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EXOBIO 제품 소개 -->
+            <div class="card mt-4" style="background: linear-gradient(135deg, rgba(220, 20, 60, 0.1) 0%, rgba(0, 0, 0, 0.9) 100%); border: 2px solid var(--red-accent);">
+                <h3 style="color: var(--red-primary); margin-bottom: 20px;">
+                    <i class="fas fa-flask"></i> <span translate="no">EXOBIO 357</span> <span data-i18n="product_ampoule">앰플</span>
+                </h3>
+                
+                <div style="background: rgba(220, 20, 60, 0.05); padding: 16px; border-radius: 12px; border-left: 4px solid var(--red-primary); margin-bottom: 16px;">
+                    <p style="color: var(--white-primary); font-weight: 600; font-size: 1.1rem; line-height: 1.8; margin: 0;">
+                        <span data-i18n="product_exobio_intro">피부과에서 시작해 약국이 인정한</span><br>
+                        <strong style="color: var(--red-primary);" data-i18n="product_exobio_name">엑소좀 스킨케어 첫단계 357앰플</strong>
+                    </p>
+                </div>
+
+                <div style="margin: 20px 0;">
+                    <div style="display: flex; align-items: center; margin-bottom: 12px;">
+                        <div style="width: 8px; height: 8px; background: var(--red-primary); border-radius: 50%; margin-right: 12px;"></div>
+                        <p style="color: var(--white-secondary); margin: 0; font-size: 1rem;" data-i18n="product_feature_1">
+                            스킨케어 효과 UP, 첫 단계
+                        </p>
+                    </div>
+                    
+                    <div style="display: flex; align-items: center; margin-bottom: 12px;">
+                        <div style="width: 8px; height: 8px; background: var(--red-primary); border-radius: 50%; margin-right: 12px;"></div>
+                        <p style="color: var(--white-secondary); margin: 0; font-size: 1rem;" data-i18n="product_feature_2">
+                            피부과 효과를 집까지 데려오는 첫 단계 케어
+                        </p>
+                    </div>
+                    
+                    <div style="display: flex; align-items: center;">
+                        <div style="width: 8px; height: 8px; background: var(--red-primary); border-radius: 50%; margin-right: 12px;"></div>
+                        <p style="color: var(--white-secondary); margin: 0; font-size: 1rem;">
+                            <strong style="color: var(--red-primary);" data-i18n="product_feature_3">무알콜 · 무향료 · 무색소 (3無)</strong>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 제품 이미지 -->
+                <div style="text-align: center; margin: 24px 0;">
+                    <img src="images/exobio-products.jpg" alt="EXOBIO 357 제품 라인업" translate="no" 
+                         style="width: 100%; max-width: 600px; border-radius: 12px; box-shadow: 0 8px 24px rgba(220, 20, 60, 0.3);">
+                </div>
+            </div>
+
+            <!-- 우리의 기술 섹션 -->
+            <div class="card mt-4" style="background: linear-gradient(135deg, rgba(220, 20, 60, 0.15) 0%, rgba(0, 0, 0, 0.9) 100%); border: 2px solid var(--red-primary);">
+                <h3 style="color: var(--red-primary); margin-bottom: 24px; font-size: 1.5rem;">
+                    <i class="fas fa-brain"></i> <span data-i18n="tech_title">우리의 기술</span>
+                </h3>
+                
+                <p style="color: var(--white-secondary); font-size: 1.05rem; line-height: 1.8; margin-bottom: 30px;" data-i18n="tech_intro">
+                    <span translate="no">CURETEMBIO</span>는 AI 기술과 피부과학을 결합하여 피부 관리를 지원하는 혁신적인 솔루션을 제공합니다. 사용자의 피부 촬영 데이터를 기반으로 피부 상태를 분석하고, 개인에게 적합한 제품 추천을 통해 더 나은 피부 건강 관리를 도와드립니다.
+                </p>
+                
+                <!-- 기술 1: 딥러닝 -->
+                <div class="tech-card">
+                    <div class="tech-card-border"></div>
+                    <div class="tech-card-header">
+                        <div class="tech-card-icon">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <h4 class="tech-card-title" data-i18n="tech_dl_title">
+                            AI 기반 피부 분석 시스템
+                        </h4>
+                    </div>
+                    <p class="tech-card-content" data-i18n="tech_dl_desc">
+                        AI 얼굴 인식 기술을 활용하여 촬영된 이미지에서 피부 영역을 자동으로 감지하고, 10가지 피부 건강 지표를 분석합니다. 지속적으로 축적되는 사용자 데이터를 통해 분석 알고리즘을 개선하고 있으며, 더욱 정교한 분석을 위한 연구 개발을 진행 중입니다.
+                    </p>
+                    
+                    <!-- 프리미엄 이미지 2: AI 기반 피부 분석 시스템 -->
+                    <div class="premium-image-container" style="margin: 24px 0; text-align: center; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 24px rgba(220, 20, 60, 0.25);">
+                        <img src="images/premium/face-grid.jpg" 
+                             alt="AI Face Analysis Grid" 
+                             style="width: 100%; height: auto; display: block; border-radius: 12px;">
+                    </div>
+                </div>
+                
+                <!-- 기술 2: 10가지 피부 지표 -->
+                <div class="tech-card">
+                    <div class="tech-card-border"></div>
+                    <div class="tech-card-header">
+                        <div class="tech-card-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h4 class="tech-card-title" data-i18n="tech_metrics_title">
+                            10가지 피부 지표 평가
+                        </h4>
+                    </div>
+                    <p class="tech-card-content" data-i18n="tech_metrics_desc">
+                        피부 건강의 핵심 요소를 다각도로 평가하여 종합적인 피부 상태를 확인할 수 있습니다.
+                    </p>
+                    <div class="tech-card-list">
+                        <div class="tech-card-list-item">
+                            <div class="tech-card-bullet"></div>
+                            <span data-i18n="metric_1">톤 균일도</span>
+                        </div>
+                        <div class="tech-card-list-item">
+                            <div class="tech-card-bullet"></div>
+                            <span data-i18n="metric_2">피부 밝기</span>
+                        </div>
+                        <div class="tech-card-list-item">
+                            <div class="tech-card-bullet"></div>
+                            <span data-i18n="metric_3">색소 침착</span>
+                        </div>
+                        <div class="tech-card-list-item">
+                            <div class="tech-card-bullet"></div>
+                            <span data-i18n="metric_4">주름 깊이</span>
+                        </div>
+                        <div class="tech-card-list-item">
+                            <div class="tech-card-bullet"></div>
+                            <span data-i18n="metric_5">탄력도</span>
+                        </div>
+                        <div class="tech-card-list-item">
+                            <div class="tech-card-bullet"></div>
+                            <span data-i18n="metric_6">수분 함량</span>
+                        </div>
+                        <div class="tech-card-list-item">
+                            <div class="tech-card-bullet"></div>
+                            <span data-i18n="metric_7">민감도</span>
+                        </div>
+                        <div class="tech-card-list-item">
+                            <div class="tech-card-bullet"></div>
+                            <span data-i18n="metric_8">홍조 정도</span>
+                        </div>
+                        <div class="tech-card-list-item">
+                            <div class="tech-card-bullet"></div>
+                            <span data-i18n="metric_9">여드름 발생</span>
+                        </div>
+                        <div class="tech-card-list-item">
+                            <div class="tech-card-bullet"></div>
+                            <span data-i18n="metric_10">모공 상태</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 기술 3: 시계열 데이터 추적 -->
+                <div class="tech-card">
+                    <div class="tech-card-border"></div>
+                    <div class="tech-card-header">
+                        <div class="tech-card-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4 class="tech-card-title" data-i18n="tech_tracking_title">
+                            시계열 데이터 추적 시스템
+                        </h4>
+                    </div>
+                    <p class="tech-card-content">
+                        <span data-i18n="tech_tracking_desc_long">매 촬영마다 피부 상태가 자동으로 기록되며, 시간에 따른 피부 변화를 비교해볼 수 있습니다. 기록된 데이터를 통해 계절별, 생활습관별 피부 반응을 확인하고, 전문가 상담 시 보다 세밀한 피부 관리 조언을 받을 수 있습니다.</span>
+                    </p>
+                </div>
+                
+                <!-- 기술 4: 개인 맞춤형 케어 -->
+                <div class="tech-card">
+                    <div class="tech-card-border"></div>
+                    <div class="tech-card-header">
+                        <div class="tech-card-icon">
+                            <i class="fas fa-user-check"></i>
+                        </div>
+                        <h4 class="tech-card-title" data-i18n="tech_personalized_title">
+                            개인 맞춤형 제품 추천
+                        </h4>
+                    </div>
+                    <p class="tech-card-content">
+                        <span data-i18n="tech_personalized_desc_long">피부 분석 결과를 기반으로 EXOBIO 제품 중 사용자에게 적합한 제품 조합을 추천해 드립니다. 더블UP 시스템을 통해 프리미엄 라인과 RED 라인의 조합으로 보다 효과적인 피부 케어를 경험하실 수 있습니다. 보다 전문적인 피부 상담이 필요하신 경우, 공식 이메일을 통해 1:1 맞춤 상담을 받으실 수 있습니다.</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- 프리미엄 이미지 1: 우리의 기술과 왜 큐어템바이오 사이 -->
+            <div class="premium-image-container" style="margin: 40px 0; text-align: center; border-radius: 16px; overflow: hidden; box-shadow: 0 12px 40px rgba(220, 20, 60, 0.3);">
+                <img src="images/premium/hologram-ui.jpg" 
+                     alt="CURETEMBIO AI Technology" 
+                     style="width: 100%; height: auto; display: block; border-radius: 16px;">
+            </div>
+
+            <div class="card mt-4">
+                <h3><span data-i18n="home_why_title">🎯 왜 <span translate="no">CURETEMBIO</span>인가?</span></h3>
+                
+                <div style="background: linear-gradient(135deg, rgba(220, 20, 60, 0.1) 0%, rgba(0, 0, 0, 0.3) 100%); padding: 20px; border-radius: 12px; border-left: 4px solid var(--red-primary); margin-bottom: 20px;">
+                    <p style="color: var(--white-primary); font-size: 1.05rem; line-height: 1.8; margin: 0;">
+                        <strong style="color: var(--red-primary); font-size: 1.2rem;" data-i18n="tech_dl_title_short">딥러닝 기반 이미지 분석</strong><br>
+                        <span style="color: var(--white-secondary);" data-i18n="tech_dl_desc_short">컴퓨터 비전 기술로 10가지 피부 지표를 정밀 측정하고 수천 건의 데이터로 학습된 AI가 피부 상태를 정확히 분석합니다.</span>
+                    </p>
+                </div>
+                
+                <div style="background: linear-gradient(135deg, rgba(220, 20, 60, 0.1) 0%, rgba(0, 0, 0, 0.3) 100%); padding: 20px; border-radius: 12px; border-left: 4px solid var(--red-primary); margin-bottom: 20px;">
+                    <p style="color: var(--white-primary); font-size: 1.05rem; line-height: 1.8; margin: 0;">
+                        <strong style="color: var(--red-primary); font-size: 1.2rem;" data-i18n="tech_tracking_title">시계열 데이터 추적 시스템</strong><br>
+                        <span style="color: var(--white-secondary);" data-i18n="tech_tracking_desc">매 촬영마다 피부 변화를 기록하고 시간별 추이를 분석하여 개인 맞춤형 케어 솔루션을 제공합니다.</span>
+                    </p>
+                </div>
+                
+                <ul style="color: var(--white-secondary); line-height: 2;">
+                    <li><span class="text-red">✓</span> <span data-i18n="feature_ai_recommend">AI 기반 맞춤형 제품 추천 알고리즘</span></li>
+                    <li><span class="text-red">✓</span> <span data-i18n="feature_smart_recommend">국가/기후/나이/계절 기반 스마트 추천</span></li>
+                    <li><span class="text-red">✓</span> <span data-i18n="feature_expert_consult">전문가 맞춤 상담 서비스</span></li>
+                    <li><span class="text-red">✓</span> <span data-i18n="feature_privacy">개인정보 보호 (기기 내 저장)</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 페이지: 촬영 -->
+        <div id="page-capture" class="page">
+            <div class="page-header">
+                <h2 data-i18n="capture_title">📸 피부 촬영</h2>
+                <p class="page-subtitle" data-i18n="capture_subtitle">얼굴을 가이드 안에 맞춰 촬영해주세요</p>
+            </div>
+
+            <div class="card">
+                <div class="camera-container">
+                    <video id="video" autoplay playsinline></video>
+                    <canvas id="canvas" style="display: none;"></canvas>
+                    <div class="camera-overlay"></div>
+                </div>
+                
+                <!-- 촬영 버튼 (카메라 화면 바로 아래) -->
+                <div class="text-center mt-3" id="capture-btn-container">
+                    <button class="capture-button-external" onclick="capturePhoto()">
+                        <i class="fas fa-camera" style="font-size: 1.5rem; color: white; margin-right: 8px;"></i>
+                        <span data-i18n="capture_button">촬영하기</span>
+                    </button>
+                </div>
+
+                <!-- 촬영 완료 후 결과 화면 -->
+                <div id="capture-result" style="display: none; animation: fadeIn 0.5s ease;">
+                    <h3 class="text-center text-red mt-3" data-i18n="capture_complete">✅ 촬영 완료!</h3>
+                    <p class="text-center" style="color: var(--white-secondary); margin-top: 8px; margin-bottom: 24px;" data-i18n="capture_analyze">
+                        이제 AI가 피부를 분석합니다
+                    </p>
+                    <div class="text-center mt-3">
+                        <button onclick="window.analyzePhoto()" class="btn btn-primary btn-large" style="animation: pulse 2s infinite;">
+                            <i class="fas fa-brain"></i> <span data-i18n="capture_analyze_button">AI 분석 시작</span>
+                        </button>
+                        <button class="btn btn-secondary mt-2" onclick="retakePhoto()">
+                            <i class="fas fa-redo"></i> <span data-i18n="capture_retake">다시 촬영</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3><i class="fas fa-info-circle text-red"></i> <span data-i18n="guide_title">촬영 가이드</span></h3>
+                <ul style="color: var(--white-secondary); line-height: 2;">
+                    <li data-i18n="guide_1">밝은 곳에서 촬영해주세요</li>
+                    <li data-i18n="guide_2">화장을 지우고 맨얼굴로 촬영해주세요</li>
+                    <li data-i18n="guide_3">얼굴을 정면으로 향해주세요</li>
+                    <li data-i18n="guide_4">가이드 원 안에 얼굴을 맞춰주세요</li>
+                </ul>
+                
+                <!-- 피부 진단 안내 -->
+                <div style="background: rgba(220, 20, 60, 0.1); border: 1px solid var(--red-primary); border-radius: 8px; padding: 12px; margin-top: 16px;">
+                    <p style="color: var(--white-secondary); font-size: 0.9rem; line-height: 1.6; margin: 0;">
+                        <i class="fas fa-exclamation-circle" style="color: var(--red-primary); margin-right: 8px;"></i>
+                        <strong style="color: var(--white-primary);" data-i18n="disclaimer_title">피부 진단 안내:</strong><br>
+                        <span data-i18n="disclaimer_content">AI 피부 진단 서비스는 피부에 대한 기본 참고용입니다. 더욱 자세한 피부 진단을 원하시는 경우 피부과 전문의와 상담을 해주시기 바랍니다.</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- 피부 진단 안내 (면책 조항) -->
+            <div class="card" style="background: linear-gradient(135deg, rgba(220, 20, 60, 0.1) 0%, rgba(0, 0, 0, 0.5) 100%); border: 2px solid rgba(220, 20, 60, 0.5);">
+                <h3 style="color: var(--red-primary); margin-bottom: 16px;">
+                    <i class="fas fa-exclamation-triangle"></i> <span data-i18n="disclaimer_main_title">피부 진단 안내</span>
+                </h3>
+                <p style="color: var(--white-primary); line-height: 1.8; font-size: 0.95rem; margin: 0;" data-i18n="disclaimer_main_content">
+                    AI 피부 진단 서비스는 피부에 대한 <strong style="color: var(--red-primary);">기본 참고용</strong>입니다. 더욱 자세한 피부 진단을 원하시는 경우 <strong style="color: var(--red-primary);">피부과 전문의와 상담</strong>을 해주시기 바랍니다.
+                </p>
+            </div>
+        </div>
+
+        <!-- 페이지: 분석 결과 -->
+        <div id="page-analysis" class="page">
+            <div class="page-header">
+                <h2 data-i18n="analysis_title">🧬 AI 피부 분석 결과</h2>
+                <p class="page-subtitle" id="analysis-date"></p>
+            </div>
+
+            <div class="card" style="display: flex; justify-content: center; align-items: center;">
+                <img id="analyzed-image" style="width: 100%; max-width: 300px; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 12px; box-shadow: 0 4px 12px rgba(220, 20, 60, 0.3);" alt="분석된 이미지">
+            </div>
+
+            <div class="card">
+                <h3 class="text-center mb-3" data-i18n="analysis_total_score">피부 건강 종합 점수</h3>
+                <div class="text-center" style="font-size: 3rem; font-weight: 900; background: var(--gradient-red-glow); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                    <span id="total-score">0</span>/100
+                </div>
+            </div>
+
+            <div id="analysis-results"></div>
+
+            <div class="card text-center">
+                <button class="btn btn-primary btn-large" onclick="navigateTo('home')">
+                    <i class="fas fa-home"></i> <span data-i18n="analysis_home">홈으로</span>
+                </button>
+                <button class="btn btn-secondary mt-2" onclick="navigateTo('capture')">
+                    <i class="fas fa-camera"></i> <span data-i18n="analysis_retake">다시 촬영</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- 페이지: 기록 -->
+        <div id="page-history" class="page">
+            <div class="page-header">
+                <h2 data-i18n="history_title">📊 피부 변화 기록</h2>
+                <p class="page-subtitle" data-i18n="history_subtitle">시간별 피부 상태를 확인하세요</p>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title"><span data-i18n="history_count">촬영 기록</span> (<span id="history-count">0</span>건)</h3>
+                    <button class="btn btn-secondary" onclick="clearHistory()">
+                        <i class="fas fa-trash"></i> <span data-i18n="history_delete_all">전체 삭제</span>
+                    </button>
+                </div>
+                <div id="history-gallery" class="image-gallery mt-3">
+                    <!-- 동적으로 생성 -->
+                </div>
+            </div>
+
+            <div id="comparison-section" style="display: none;" class="card">
+                <h3 data-i18n="comparison_title">비교 분석</h3>
+                <div class="grid grid-2">
+                    <div>
+                        <h4 class="text-red" data-i18n="comparison_before">이전 사진</h4>
+                        <img id="compare-img-1" style="width: 100%; border-radius: 8px; border: 2px solid var(--red-primary);">
+                    </div>
+                    <div>
+                        <h4 class="text-red" data-i18n="comparison_recent">최근 사진</h4>
+                        <img id="compare-img-2" style="width: 100%; border-radius: 8px; border: 2px solid var(--red-primary);">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 페이지: 상담 -->
+        <div id="page-consult" class="page">
+            <div class="page-header">
+                <h2 data-i18n="consult_title">💬 전문가 상담 요청</h2>
+                <p class="page-subtitle"><span translate="no">CURETEMBIO</span> <span data-i18n="consult_subtitle">연구소에서 답변드립니다</span></p>
+            </div>
+
+            <form id="consult-form" class="card" action="https://api.web3forms.com/submit" method="POST">
+                <!-- 🆕 [v3.3.6] Web3Forms 설정 -->
+                <input type="hidden" name="access_key" value="ee1d6770-6481-44b7-802f-28bc1526305e">
+                <input type="hidden" name="subject" value="[CURETEMBIO] 새로운 상담 요청">
+                <input type="hidden" name="from_name" value="CURETEMBIO AI 피부진단">
+                
+                <div class="form-group">
+                    <label data-i18n="consult_name">이름 <span class="text-red">*</span></label>
+                    <input type="text" name="name" required data-i18n-placeholder="consult_name_placeholder">
+                </div>
+
+                <div class="form-group">
+                    <label data-i18n="consult_email">이메일 <span class="text-red">*</span></label>
+                    <input type="email" name="email" required data-i18n-placeholder="consult_email_placeholder">
+                </div>
+
+                <div class="form-group">
+                    <label data-i18n="consult_message">상담 내용 <span class="text-red">*</span></label>
+                    <textarea name="message" required data-i18n-placeholder="consult_message_placeholder" rows="6"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" required style="width: auto; margin-right: 8px;">
+                        <span class="text-white" data-i18n="consult_privacy_agree">개인정보 수집 및 이용에 동의합니다</span>
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">
+                    <i class="fas fa-paper-plane"></i> <span data-i18n="consult_submit">상담 요청하기</span>
+                </button>
+            </form>
+
+            <div id="consult-result" style="display: none;" class="card">
+                <h3 class="text-center text-red" data-i18n="consult_success_title">✅ 상담 요청 완료!</h3>
+                <p class="text-center mt-2" data-i18n="consult_success_message">
+                    영업일 기준 1-2일 내에 <strong style="color: var(--red-primary);">curetembio@gmail.com</strong>에서 답변드리겠습니다.
+                </p>
+                <p class="text-center" style="color: var(--gray-light); font-size: 0.875rem; margin-top: 12px;" data-i18n="consult_success_hours">
+                    운영시간: 평일 10:00~17:00
+                </p>
+            </div>
+
+            <div class="card">
+                <h3><i class="fas fa-envelope text-red"></i> <span data-i18n="consult_contact">연락처</span></h3>
+                <p style="line-height: 2;">
+                    <strong class="text-white" data-i18n="consult_email_label">📧 공식 이메일:</strong> 
+                    <a href="mailto:curetembio@gmail.com" style="color: var(--red-primary); text-decoration: none; font-weight: 600;">curetembio@gmail.com</a>
+                </p>
+                <p style="line-height: 2;">
+                    <strong class="text-white" data-i18n="consult_hours_label">🕐 운영시간:</strong> <span data-i18n="consult_hours_value">평일 10:00~17:00</span>
+                </p>
+                <p style="color: var(--gray-light); font-size: 0.875rem; margin-top: 12px;">
+                    <span data-i18n="consult_note">※ 전문가 상담은 이메일로만 접수 가능합니다</span>
+                </p>
+            </div>
+        </div>
+
+        <!-- 페이지: 정보 -->
+        <div id="page-info" class="page">
+            <div class="page-header">
+                <h2 data-i18n="info_title">ℹ️ <span translate="no">CURETEMBIO</span> 소개</h2>
+                <p class="page-subtitle" data-i18n="info_subtitle">AI 기반 피부 진단 연구소</p>
+            </div>
+
+            <div class="card">
+                <div class="text-center mb-3">
+                    <img src="images/logo-main.png" alt="CURETEMBIO" translate="no" style="width: 300px; max-width: 100%; height: auto;">
+                </div>
+                <h3 class="text-center text-red" translate="no">CURETEMBIO</h3>
+                <p class="text-center" data-i18n="info_lab_desc">AI 피부 진단 전문 연구소</p>
+            </div>
+
+            <!-- 우리의 기술 섹션 (상세 버전) -->
+            <div class="card" style="background: linear-gradient(135deg, rgba(220, 20, 60, 0.15) 0%, rgba(0, 0, 0, 0.9) 100%); border: 2px solid var(--red-primary);">
+                <h3 style="color: var(--red-primary); margin-bottom: 24px; font-size: 1.5rem;">
+                    <i class="fas fa-brain"></i> <span data-i18n="tech_title">우리의 기술</span>
+                </h3>
+                
+                <p style="color: var(--white-secondary); font-size: 1.05rem; line-height: 1.8; margin-bottom: 30px;">
+                    <span translate="no">CURETEMBIO</span><span data-i18n="tech_intro_full">는 AI 기술과 피부과학을 결합하여 피부 관리를 지원하는 혁신적인 솔루션을 제공합니다. 사용자의 피부 촬영 데이터를 기반으로 피부 상태를 분석하고, 개인에게 적합한 제품 추천을 통해 더 나은 피부 건강 관리를 도와드립니다.</span>
+                </p>
+                
+                <!-- 기술 1: 딥러닝 -->
+                <div class="tech-card">
+                    <div class="tech-card-border"></div>
+                    <div class="tech-card-header">
+                        <div class="tech-card-icon">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <h4 class="tech-card-title" data-i18n="tech_dl_title">
+                            AI 기반 피부 분석 시스템
+                        </h4>
+                    </div>
+                    <p class="tech-card-content" data-i18n="tech_dl_desc">
+                        AI 얼굴 인식 기술을 활용하여 촬영된 이미지에서 피부 영역을 자동으로 감지하고, 10가지 피부 건강 지표를 분석합니다. 지속적으로 축적되는 사용자 데이터를 통해 분석 알고리즘을 개선하고 있으며, 더욱 정교한 분석을 위한 연구 개발을 진행 중입니다.
+                    </p>
+                </div>
+                
+                <!-- 기술 2: 10가지 피부 지표 -->
+                <div class="tech-card">
+                    <div class="tech-card-border"></div>
+                    <div class="tech-card-header">
+                        <div class="tech-card-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h4 class="tech-card-title" data-i18n="tech_metrics_title">
+                            10가지 피부 지표 평가
+                        </h4>
+                    </div>
+                    <p class="tech-card-content" data-i18n="tech_metrics_desc">
+                        피부 건강의 핵심 요소를 다각도로 평가하여 종합적인 피부 상태를 확인할 수 있습니다.
+                    </p>
+                    <div class="tech-card-list">
+                        <div class="tech-card-list-item">
+                            <div class="tech-card-bullet"></div>
+                            <span data-i18n="metric_1">톤 균일도</span>
+                        </div>
+                        <div class="tech-card-list-item">
+                            <div class="tech-card-bullet"></div>
+                            <span data-i18n="metric_2">피부 밝기</span>
+                        </div>
+                        <div class="tech-card-list-item">
+                            <div class="tech-card-bullet"></div>
+                            <span data-i18n="metric_3">색소 침착</span>
+                        </div>
+                        <div class="tech-card-list-item">
+                            <div class="tech-card-bullet"></div>
+                            <span data-i18n="metric_4">주름 깊이</span>
+                        </div>
+                        <div class="tech-card-list-item">
+                            <div class="tech-card-bullet"></div>
+                            <span data-i18n="metric_5">탄력도</span>
+                        </div>
+                        <div class="tech-card-list-item">
+                            <div class="tech-card-bullet"></div>
+                            <span data-i18n="metric_6">수분 함량</span>
+                        </div>
+                        <div class="tech-card-list-item">
+                            <div class="tech-card-bullet"></div>
+                            <span data-i18n="metric_7">민감도</span>
+                        </div>
+                        <div class="tech-card-list-item">
+                            <div class="tech-card-bullet"></div>
+                            <span data-i18n="metric_8">홍조 정도</span>
+                        </div>
+                        <div class="tech-card-list-item">
+                            <div class="tech-card-bullet"></div>
+                            <span data-i18n="metric_9">여드름 발생</span>
+                        </div>
+                        <div class="tech-card-list-item">
+                            <div class="tech-card-bullet"></div>
+                            <span data-i18n="metric_10">모공 상태</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 기술 3: 시계열 데이터 추적 -->
+                <div class="tech-card">
+                    <div class="tech-card-border"></div>
+                    <div class="tech-card-header">
+                        <div class="tech-card-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4 class="tech-card-title" data-i18n="tech_tracking_title">
+                            시계열 데이터 추적 시스템
+                        </h4>
+                    </div>
+                    <p class="tech-card-content">
+                        <span data-i18n="tech_tracking_desc_long">매 촬영마다 피부 상태가 자동으로 기록되며, 시간에 따른 피부 변화를 비교해볼 수 있습니다. 기록된 데이터를 통해 계절별, 생활습관별 피부 반응을 확인하고, 전문가 상담 시 보다 세밀한 피부 관리 조언을 받을 수 있습니다.</span>
+                    </p>
+                </div>
+                
+                <!-- 기술 4: 개인 맞춤형 케어 -->
+                <div class="tech-card">
+                    <div class="tech-card-border"></div>
+                    <div class="tech-card-header">
+                        <div class="tech-card-icon">
+                            <i class="fas fa-user-check"></i>
+                        </div>
+                        <h4 class="tech-card-title" data-i18n="tech_personalized_title">
+                            개인 맞춤형 제품 추천
+                        </h4>
+                    </div>
+                    <p class="tech-card-content">
+                        <span data-i18n="tech_personalized_desc_long">피부 분석 결과를 기반으로 EXOBIO 제품 중 사용자에게 적합한 제품 조합을 추천해 드립니다. 더블UP 시스템을 통해 프리미엄 라인과 RED 라인의 조합으로 보다 효과적인 피부 케어를 경험하실 수 있습니다. 보다 전문적인 피부 상담이 필요하신 경우, 공식 이메일을 통해 1:1 맞춤 상담을 받으실 수 있습니다.</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3><i class="fas fa-shield-alt text-red"></i> <span data-i18n="privacy_title">개인정보 보호</span></h3>
+                <p data-i18n="privacy_desc">모든 데이터는 사용자 기기에 암호화되어 저장되며, 서버로 전송되지 않습니다. (상담 요청 제외)</p>
+                <button class="btn btn-secondary mt-2" onclick="clearAllData()">
+                    <i class="fas fa-eraser"></i> <span data-i18n="delete_all_data">내 데이터 전체 삭제</span>
+                </button>
+            </div>
+
+            <div class="card">
+                <h3><i class="fas fa-book text-red"></i> <span data-i18n="user_guide_title">사용 가이드</span></h3>
+                <ol style="color: var(--white-secondary); line-height: 2; padding-left: 28px; margin-left: 0;">
+                    <li style="margin-bottom: 8px; padding-left: 4px;" data-i18n="guide_step1">카메라로 피부 촬영</li>
+                    <li style="margin-bottom: 8px; padding-left: 4px;" data-i18n="guide_step2">AI 즉시 분석</li>
+                    <li style="margin-bottom: 8px; padding-left: 4px;" data-i18n="guide_step3">제품 추천 확인</li>
+                    <li style="margin-bottom: 8px; padding-left: 4px;" data-i18n="guide_step4">정기적으로 촬영하여 변화 추적</li>
+                    <li style="margin-bottom: 8px; padding-left: 4px;" data-i18n="guide_step5">필요시 전문가 상담 요청</li>
+                </ol>
+            </div>
+
+            <!-- SNS 팔로우 섹션 -->
+            <div class="card" style="background: linear-gradient(135deg, rgba(220, 20, 60, 0.15) 0%, rgba(0, 0, 0, 0.9) 100%); border: 2px solid var(--red-accent);">
+                <h3><i class="fas fa-share-alt text-red"></i> <span translate="no">CURETEMBIO</span> <span data-i18n="sns_title">공식 SNS</span></h3>
+                <p style="color: var(--white-secondary); margin: 16px 0; line-height: 1.8; white-space: pre-line;" data-i18n="sns_desc">
+                    CURETEMBIO의 공식 SNS 팔로워를 해주세요.
+정보를 꾸준하게 받을 수 있으며 AI 피부진단 시스템 운영에 도움이 됩니다.
+                </p>
+                
+                <!-- SNS 아이콘 그리드 -->
+                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin: 24px 0;">
+                    <!-- Instagram Global -->
+                    <a href="https://www.instagram.com/exobio.global" target="_blank" rel="noopener noreferrer" 
+                       style="display: flex; flex-direction: column; align-items: center; text-decoration: none; transition: transform 0.3s ease;"
+                       onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                        <div style="width: 50px; height: 50px; background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(220, 20, 60, 0.4);">
+                            <i class="fab fa-instagram" style="font-size: 28px; color: white;"></i>
+                        </div>
+                        <span style="color: var(--white-secondary); font-size: 0.75rem; margin-top: 8px; text-align: center;">Global</span>
+                    </a>
+                    
+                    <!-- Instagram Asia -->
+                    <a href="https://www.instagram.com/exobio.asia.official" target="_blank" rel="noopener noreferrer"
+                       style="display: flex; flex-direction: column; align-items: center; text-decoration: none; transition: transform 0.3s ease;"
+                       onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                        <div style="width: 50px; height: 50px; background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(220, 20, 60, 0.4);">
+                            <i class="fab fa-instagram" style="font-size: 28px; color: white;"></i>
+                        </div>
+                        <span style="color: var(--white-secondary); font-size: 0.75rem; margin-top: 8px; text-align: center;">Asia</span>
+                    </a>
+                    
+                    <!-- Instagram Japan -->
+                    <a href="https://www.instagram.com/exobio.jp" target="_blank" rel="noopener noreferrer"
+                       style="display: flex; flex-direction: column; align-items: center; text-decoration: none; transition: transform 0.3s ease;"
+                       onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                        <div style="width: 50px; height: 50px; background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(220, 20, 60, 0.4);">
+                            <i class="fab fa-instagram" style="font-size: 28px; color: white;"></i>
+                        </div>
+                        <span style="color: var(--white-secondary); font-size: 0.75rem; margin-top: 8px; text-align: center;">Japan</span>
+                    </a>
+                    
+                    <!-- Instagram Korea -->
+                    <a href="https://www.instagram.com/exobio.ko" target="_blank" rel="noopener noreferrer"
+                       style="display: flex; flex-direction: column; align-items: center; text-decoration: none; transition: transform 0.3s ease;"
+                       onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                        <div style="width: 50px; height: 50px; background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(220, 20, 60, 0.4);">
+                            <i class="fab fa-instagram" style="font-size: 28px; color: white;"></i>
+                        </div>
+                        <span style="color: var(--white-secondary); font-size: 0.75rem; margin-top: 8px; text-align: center;">Korea</span>
+                    </a>
+                    
+                    <!-- YouTube -->
+                    <a href="https://www.youtube.com/@exobio" target="_blank" rel="noopener noreferrer"
+                       style="display: flex; flex-direction: column; align-items: center; text-decoration: none; transition: transform 0.3s ease;"
+                       onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                        <div style="width: 50px; height: 50px; background: #FF0000; border-radius: 12px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(255, 0, 0, 0.4);">
+                            <i class="fab fa-youtube" style="font-size: 28px; color: white;"></i>
+                        </div>
+                        <span style="color: var(--white-secondary); font-size: 0.75rem; margin-top: 8px; text-align: center;">YouTube</span>
+                    </a>
+                    
+                    <!-- X (Twitter) -->
+                    <a href="https://x.com/exobio_ko" target="_blank" rel="noopener noreferrer"
+                       style="display: flex; flex-direction: column; align-items: center; text-decoration: none; transition: transform 0.3s ease;"
+                       onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                        <div style="width: 50px; height: 50px; background: #000000; border: 2px solid #FF0000; border-radius: 12px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(220, 20, 60, 0.4); overflow: hidden;">
+                            <img src="images/x-logo.png" alt="X" style="width: 30px; height: 30px; object-fit: contain;">
+                        </div>
+                        <span style="color: var(--white-secondary); font-size: 0.75rem; margin-top: 8px; text-align: center;">X</span>
+                    </a>
+                    
+                    <!-- Xiaohongshu (小红书) -->
+                    <a href="https://www.xiaohongshu.com/user/profile/64754d44000000001003514f" target="_blank" rel="noopener noreferrer"
+                       style="display: flex; flex-direction: column; align-items: center; text-decoration: none; transition: transform 0.3s ease;"
+                       onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                        <div style="width: 50px; height: 50px; background: #FE2C55; border-radius: 12px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(254, 44, 85, 0.4);">
+                            <i class="fas fa-book" style="font-size: 28px; color: white;"></i>
+                        </div>
+                        <span style="color: var(--white-secondary); font-size: 0.75rem; margin-top: 8px; text-align: center;">小红书</span>
+                    </a>
+                    
+                    <!-- TikTok -->
+                    <a href="https://www.tiktok.com/@exobio.global" target="_blank" rel="noopener noreferrer"
+                       style="display: flex; flex-direction: column; align-items: center; text-decoration: none; transition: transform 0.3s ease;"
+                       onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                        <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #00f2ea 0%, #ff0050 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(220, 20, 60, 0.4);">
+                            <i class="fab fa-tiktok" style="font-size: 28px; color: white;"></i>
+                        </div>
+                        <span style="color: var(--white-secondary); font-size: 0.75rem; margin-top: 8px; text-align: center;">TikTok</span>
+                    </a>
+                </div>
+                
+                <!-- 공식 사이트 및 쇼핑몰 -->
+                <div style="margin-top: 32px; padding-top: 24px; border-top: 1px solid rgba(220, 20, 60, 0.3);">
+                    <h4 style="color: var(--red-primary); margin-bottom: 16px; font-size: 1rem;">
+                        <i class="fas fa-globe"></i> <span data-i18n="official_channels">공식 채널</span>
+                    </h4>
+                    
+                    <!-- 공식 사이트 -->
+                    <div style="margin-bottom: 16px;">
+                        <h5 style="color: var(--white-primary); margin-bottom: 12px; font-size: 0.9rem;">
+                            <i class="fas fa-home"></i> <span data-i18n="official_site">공식 사이트</span>
+                        </h5>
+                        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px;">
+                            <!-- 한국 -->
+                            <a href="https://www.curetembio.com" target="_blank" rel="noopener noreferrer"
+                               style="display: flex; align-items: center; padding: 10px 12px; background: rgba(220, 20, 60, 0.1); border: 1px solid var(--red-accent); border-radius: 8px; text-decoration: none; transition: all 0.3s ease;"
+                               onmouseover="this.style.background='rgba(220, 20, 60, 0.2)'; this.style.borderColor='var(--red-primary)'"
+                               onmouseout="this.style.background='rgba(220, 20, 60, 0.1)'; this.style.borderColor='var(--red-accent)'">
+                                <span style="margin-right: 6px;">🇰🇷</span>
+                                <div style="flex: 1; min-width: 0;">
+                                    <div style="color: var(--white-primary); font-weight: 600; font-size: 0.85rem;">KR</div>
+                                    <div style="color: var(--white-secondary); font-size: 0.75rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">curetembio.com</div>
+                                </div>
+                            </a>
+                            
+                            <!-- 영어 -->
+                            <a href="https://www.en.curetembio.com" target="_blank" rel="noopener noreferrer"
+                               style="display: flex; align-items: center; padding: 10px 12px; background: rgba(220, 20, 60, 0.1); border: 1px solid var(--red-accent); border-radius: 8px; text-decoration: none; transition: all 0.3s ease;"
+                               onmouseover="this.style.background='rgba(220, 20, 60, 0.2)'; this.style.borderColor='var(--red-primary)'"
+                               onmouseout="this.style.background='rgba(220, 20, 60, 0.1)'; this.style.borderColor='var(--red-accent)'">
+                                <span style="margin-right: 6px;">🇺🇸</span>
+                                <div style="flex: 1; min-width: 0;">
+                                    <div style="color: var(--white-primary); font-weight: 600; font-size: 0.85rem;">EN</div>
+                                    <div style="color: var(--white-secondary); font-size: 0.75rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">en.curetembio.com</div>
+                                </div>
+                            </a>
+                            
+                            <!-- 일본 -->
+                            <a href="https://www.jp.curetembio.com" target="_blank" rel="noopener noreferrer"
+                               style="display: flex; align-items: center; padding: 10px 12px; background: rgba(220, 20, 60, 0.1); border: 1px solid var(--red-accent); border-radius: 8px; text-decoration: none; transition: all 0.3s ease;"
+                               onmouseover="this.style.background='rgba(220, 20, 60, 0.2)'; this.style.borderColor='var(--red-primary)'"
+                               onmouseout="this.style.background='rgba(220, 20, 60, 0.1)'; this.style.borderColor='var(--red-accent)'">
+                                <span style="margin-right: 6px;">🇯🇵</span>
+                                <div style="flex: 1; min-width: 0;">
+                                    <div style="color: var(--white-primary); font-weight: 600; font-size: 0.85rem;">JP</div>
+                                    <div style="color: var(--white-secondary); font-size: 0.75rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">jp.curetembio.com</div>
+                                </div>
+                            </a>
+                            
+                            <!-- 중국 -->
+                            <a href="https://www.cn.curetembio.com" target="_blank" rel="noopener noreferrer"
+                               style="display: flex; align-items: center; padding: 10px 12px; background: rgba(220, 20, 60, 0.1); border: 1px solid var(--red-accent); border-radius: 8px; text-decoration: none; transition: all 0.3s ease;"
+                               onmouseover="this.style.background='rgba(220, 20, 60, 0.2)'; this.style.borderColor='var(--red-primary)'"
+                               onmouseout="this.style.background='rgba(220, 20, 60, 0.1)'; this.style.borderColor='var(--red-accent)'">
+                                <span style="margin-right: 6px;">🇨🇳</span>
+                                <div style="flex: 1; min-width: 0;">
+                                    <div style="color: var(--white-primary); font-weight: 600; font-size: 0.85rem;">CN</div>
+                                    <div style="color: var(--white-secondary); font-size: 0.75rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">cn.curetembio.com</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- 공식 쇼핑몰 -->
+                    <div style="margin-top: 20px;">
+                        <h5 style="color: var(--white-primary); margin-bottom: 12px; font-size: 0.9rem;">
+                            <i class="fas fa-shopping-cart"></i> <span data-i18n="official_shop">공식 쇼핑몰</span>
+                        </h5>
+                        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px;">
+                            <!-- 일본 -->
+                            <a href="https://www.exobio.net" target="_blank" rel="noopener noreferrer"
+                               style="display: flex; align-items: center; padding: 10px 12px; background: rgba(220, 20, 60, 0.1); border: 1px solid var(--red-accent); border-radius: 8px; text-decoration: none; transition: all 0.3s ease;"
+                               onmouseover="this.style.background='rgba(220, 20, 60, 0.2)'; this.style.borderColor='var(--red-primary)'"
+                               onmouseout="this.style.background='rgba(220, 20, 60, 0.1)'; this.style.borderColor='var(--red-accent)'">
+                                <span style="margin-right: 6px;">🇯🇵</span>
+                                <div style="flex: 1; min-width: 0;">
+                                    <div style="color: var(--white-primary); font-weight: 600; font-size: 0.85rem;">JP</div>
+                                    <div style="color: var(--white-secondary); font-size: 0.75rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">exobio.net</div>
+                                </div>
+                            </a>
+                            
+                            <!-- 한국 -->
+                            <a href="https://www.kr.exobio.net" target="_blank" rel="noopener noreferrer"
+                               style="display: flex; align-items: center; padding: 10px 12px; background: rgba(220, 20, 60, 0.1); border: 1px solid var(--red-accent); border-radius: 8px; text-decoration: none; transition: all 0.3s ease;"
+                               onmouseover="this.style.background='rgba(220, 20, 60, 0.2)'; this.style.borderColor='var(--red-primary)'"
+                               onmouseout="this.style.background='rgba(220, 20, 60, 0.1)'; this.style.borderColor='var(--red-accent)'">
+                                <span style="margin-right: 6px;">🇰🇷</span>
+                                <div style="flex: 1; min-width: 0;">
+                                    <div style="color: var(--white-primary); font-weight: 600; font-size: 0.85rem;">KR</div>
+                                    <div style="color: var(--white-secondary); font-size: 0.75rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">kr.exobio.net</div>
+                                </div>
+                            </a>
+                            
+                            <!-- 영어 -->
+                            <a href="https://www.en.exobio.net" target="_blank" rel="noopener noreferrer"
+                               style="display: flex; align-items: center; padding: 10px 12px; background: rgba(220, 20, 60, 0.1); border: 1px solid var(--red-accent); border-radius: 8px; text-decoration: none; transition: all 0.3s ease;"
+                               onmouseover="this.style.background='rgba(220, 20, 60, 0.2)'; this.style.borderColor='var(--red-primary)'"
+                               onmouseout="this.style.background='rgba(220, 20, 60, 0.1)'; this.style.borderColor='var(--red-accent)'">
+                                <span style="margin-right: 6px;">🇺🇸</span>
+                                <div style="flex: 1; min-width: 0;">
+                                    <div style="color: var(--white-primary); font-weight: 600; font-size: 0.85rem;">EN</div>
+                                    <div style="color: var(--white-secondary); font-size: 0.75rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">en.exobio.net</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3><i class="fas fa-envelope text-red"></i> <span data-i18n="info_contact">연락처</span></h3>
+                <p style="line-height: 2;">
+                    <strong class="text-white" data-i18n="info_email">📧 공식 이메일:</strong><br/>
+                    <a href="mailto:curetembio@gmail.com" style="color: var(--red-primary); text-decoration: none; font-weight: 600; font-size: 1.125rem;">
+                        curetembio@gmail.com
+                    </a>
+                </p>
+                <p style="line-height: 2; margin-top: 12px;">
+                    <strong class="text-white" data-i18n="info_hours">🕐 운영시간:</strong><br/>
+                    <span style="color: var(--white-secondary);" data-i18n="info_hours_detail">평일 10:00~17:00</span>
+                </p>
+                <p style="color: var(--gray-light); font-size: 0.875rem; margin-top: 12px;" data-i18n="info_consult_desc">
+                    ※ 피부 상담 및 문의는 이메일로 연락주세요
+                </p>
+            </div>
+
+            <div class="card text-center">
+                <p class="text-white" data-i18n="app_version">버전 1.0.0</p>
+                <p class="text-red" data-i18n="info_copyright">© 2024 CURETEMBIO. All rights reserved.</p>
+            </div>
+        </div>
+
+        <!-- 하단 네비게이션 -->
+        <nav class="bottom-nav">
+            <div class="nav-items">
+                <a class="nav-item active" onclick="navigateTo('home')">
+                    <i class="fas fa-home"></i>
+                    <span data-i18n="nav_home">홈</span>
+                </a>
+                <a class="nav-item" onclick="navigateTo('capture')">
+                    <i class="fas fa-camera"></i>
+                    <span data-i18n="nav_capture">촬영</span>
+                </a>
+                <a class="nav-item" href="https://chatbot.curetembio.xyz/" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-comments"></i>
+                    <span data-i18n="nav_chatbot">AI챗봇</span>
+                </a>
+                <a class="nav-item" onclick="navigateTo('history')">
+                    <i class="fas fa-history"></i>
+                    <span data-i18n="nav_history">기록</span>
+                </a>
+                <a class="nav-item" onclick="navigateTo('info')">
+                    <i class="fas fa-info-circle"></i>
+                    <span data-i18n="nav_info">정보</span>
+                </a>
+            </div>
+        </nav>
+
+    </div>
+
+    <!-- JavaScript -->
+    <!-- 🔥 [v10.0 FINAL] 직접 로드 방식으로 변경 (캐시 무효화) -->
+    <script>
+        // 배포 확인 로그
+        console.log('');
+        console.log('╔══════════════════════════════════════════════════════════════════╗');
+        console.log('║  🚀 CURETEMBIO v10.0 FINAL - BUILD 20260128-FINAL-999          ║');
+        console.log('║  📅 Deploy Time: ' + new Date().toLocaleString('ko-KR') + '                    ║');
+        console.log('║  🔥 Direct Loading System: ACTIVE                               ║');
+        console.log('╚══════════════════════════════════════════════════════════════════╝');
+        console.log('');
+        
+        // 캐시 무효화용 타임스탬프
+        const cacheBuster = '?v=20260128-FINAL-999-' + Date.now();
+        console.log('🎲 [CACHE BUSTER]', cacheBuster);
+    </script>
+    
+    <!-- 핵심 JS 파일들 (직접 로드) -->
+    <script src="js/clear-old-history.js?v=20260130-FINAL-I18N"></script>
+    <script src="js/products.js?v=20260130-FINAL-I18N"></script>
+    <script src="js/image-analyzer.js?v=20260130-FINAL-I18N"></script>
+    
+    <!-- 🔒 [v10.1] 교육 블록 로더 (v20.0까지 비활성화) -->
+    <script src="js/education-loader.js?v=20260130-FINAL-I18N"></script>
+    
+     <!-- 🆕🆕 [v10.1] 제품 로더 -->
+    <script src="js/product-loader.js?v=20260130-FINAL-I18N"></script>
+    
+    <!-- ==========================================
+         🆕 [v10.1 PHASE 1] 개선 시스템 (2026-02-17)
+         - 상관관계 모델 (11개 상관관계)
+         - 스마트 제품 추천 (우선순위 + 시너지)
+         - 계절/연령 조정
+         ========================================== -->
+    <script src="js/analysis-v10.1.js?v=20260217-PHASE1"></script>
+    
+    <!-- ==========================================
+         🔴 [v10.0 백업] 기존 시스템 (필요 시 복구)
+         ========================================== -->
+    <!-- <script src="js/analysis-v10.js?v=20260203-RECOMMENDATION-V25.1"></script> -->
+    
+    <script src="js/app.js?v=20260130-FINAL-I18N"></script>
+    <script src="js/online-check.js?v=20260130-FINAL-I18N"></script>
+    <script src="js/camera-v3.js?v=20260130-FINAL-I18N"></script>
+    
+    <!-- 얼굴 감지 라이브러리 (face-api.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/@vladmandic/face-api/dist/face-api.min.js"></script>
+
+
+    <!-- 다국어 시스템 (10개 언어: 한국어, English, 日本語, 中文, ไทย, Tiếng Việt, Indonesia, Melayu, Español, Français) -->
+    <script src="js/i18n-simple-3lang.js?v=20260216-CHATBOT-FIX"></script>
+    
+    <!-- 프리미엄 배경 관리 -->
+    <script src="js/premium-background.js?v=20260126-premium-v3"></script>
+    
+    <!-- Service Worker 등록 -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('service-worker.js')
+                    .then(reg => console.log('Service Worker registered'))
+                    .catch(err => console.log('Service Worker registration failed'));
+            });
+        }
+        
+        // 🆕 배포 버전 확인용 (v26.0 - 20260204-FR-COMPLETE)
+        console.log('🚀🚀🚀 [v26.0] diagnosis.html - 20260204-FR-COMPLETE');
+        console.log('✅ [완전한 배포] 모든 파일 포함 - 누락 없음!');
+        console.log('✅ [프랑스어 추가] fr.json 379개 키 완전 포함');
+        console.log('✅ [캐시 해결] i18n 캐시 버스터 업데이트');
+        console.log('✅ [이미지] 모든 제품 이미지 포함');
+        console.log('✅ [10개 언어] 완전한 다국어 지원 (Français 포함)');
+    </script>
+
+    <!-- ✨ CURETEMBIO 공식 정보 섹션 -->
+    <footer style="background: var(--deep-black); border-top: 2px solid var(--red-primary); padding: 60px 20px 40px; margin-top: 100px;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <!-- 헤더 -->
+            <div style="text-align: center; margin-bottom: 50px;">
+                <h2 data-i18n="info_title" style="font-size: clamp(1.5rem, 4vw, 2.5rem); font-weight: 900; color: var(--white-primary); margin-bottom: 15px; text-transform: uppercase; letter-spacing: 2px;">
+                    CURETEMBIO 공식 INFO
+                </h2>
+                <p data-i18n="info_subtitle" style="color: var(--white-secondary); font-size: clamp(0.9rem, 2.5vw, 1.1rem); line-height: 1.6; max-width: 700px; margin: 0 auto;">
+                    CURETEMBIO의 공식 SNS 팔로워를 해주세요.<br>
+                    정보를 꾸준하게 받을 수 있으며 AI 피부진단 시스템 운영에 도움이 됩니다.
+                </p>
+            </div>
+
+            <!-- 인스타그램 (4개) -->
+            <div style="margin-bottom: 50px;">
+                <h3 style="color: var(--red-primary); font-size: 1.3rem; font-weight: 700; margin-bottom: 20px; text-align: center;">
+                    📸 Instagram
+                </h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 15px; max-width: 700px; margin: 0 auto;">
+                    <a href="https://www.instagram.com/exobio.global" target="_blank" style="background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); border: none; padding: 20px; border-radius: 15px; text-align: center; text-decoration: none; color: var(--white-primary); transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(220, 20, 60, 0.4);">
+                        <div style="font-size: 2.5rem; margin-bottom: 10px;">📸</div>
+                        <div style="font-size: 1rem; font-weight: 700; margin-bottom: 5px;">Instagram</div>
+                        <div style="font-size: 0.8rem; opacity: 0.9; font-weight: 500;">Global</div>
+                    </a>
+                    <a href="https://www.instagram.com/exobio.asia.official" target="_blank" style="background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); border: none; padding: 20px; border-radius: 15px; text-align: center; text-decoration: none; color: var(--white-primary); transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(220, 20, 60, 0.4);">
+                        <div style="font-size: 2.5rem; margin-bottom: 10px;">📸</div>
+                        <div style="font-size: 1rem; font-weight: 700; margin-bottom: 5px;">Instagram</div>
+                        <div style="font-size: 0.8rem; opacity: 0.9; font-weight: 500;">Asia</div>
+                    </a>
+                    <a href="https://www.instagram.com/exobio.jp" target="_blank" style="background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); border: none; padding: 20px; border-radius: 15px; text-align: center; text-decoration: none; color: var(--white-primary); transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(220, 20, 60, 0.4);">
+                        <div style="font-size: 2.5rem; margin-bottom: 10px;">📸</div>
+                        <div style="font-size: 1rem; font-weight: 700; margin-bottom: 5px;">Instagram</div>
+                        <div style="font-size: 0.8rem; opacity: 0.9; font-weight: 500;">Japan</div>
+                    </a>
+                    <a href="https://www.instagram.com/exobio.ko" target="_blank" style="background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); border: none; padding: 20px; border-radius: 15px; text-align: center; text-decoration: none; color: var(--white-primary); transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(220, 20, 60, 0.4);">
+                        <div style="font-size: 2.5rem; margin-bottom: 10px;">📸</div>
+                        <div style="font-size: 1rem; font-weight: 700; margin-bottom: 5px;">Instagram</div>
+                        <div style="font-size: 0.8rem; opacity: 0.9; font-weight: 500;">Korea</div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 기타 소셜 미디어 -->
+            <div style="margin-bottom: 50px;">
+                <h3 data-i18n="info_official_channels" style="color: var(--red-primary); font-size: 1.3rem; font-weight: 700; margin-bottom: 20px; text-align: center;">
+                    🌐 공식 채널
+                </h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 15px; max-width: 700px; margin: 0 auto;">
+                    <a href="https://www.youtube.com/@exobio" target="_blank" style="background: rgba(255, 0, 0, 0.15); border: 2px solid #FF0000; padding: 20px; border-radius: 15px; text-align: center; text-decoration: none; color: var(--white-primary); transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);">
+                        <div style="font-size: 2.5rem; margin-bottom: 10px;">📺</div>
+                        <div style="font-size: 1rem; font-weight: 700; margin-bottom: 5px;">YouTube</div>
+                        <div style="font-size: 0.8rem; opacity: 0.9; font-weight: 500;">Global</div>
+                    </a>
+                    <a href="https://x.com/exobio_ko" target="_blank" style="background: rgba(0, 0, 0, 0.3); border: 2px solid #1DA1F2; padding: 20px; border-radius: 15px; text-align: center; text-decoration: none; color: var(--white-primary); transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(29, 161, 242, 0.3);">
+                        <div style="font-size: 2.5rem; margin-bottom: 10px;">𝕏</div>
+                        <div style="font-size: 1rem; font-weight: 700; margin-bottom: 5px;">X</div>
+                        <div style="font-size: 0.8rem; opacity: 0.9; font-weight: 500;">Korea</div>
+                    </a>
+                    <a href="https://www.xiaohongshu.com/user/profile/64754d44000000001003514f" target="_blank" style="background: rgba(255, 45, 85, 0.15); border: 2px solid #FF2D37; padding: 20px; border-radius: 15px; text-align: center; text-decoration: none; color: var(--white-primary); transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(255, 45, 55, 0.3);">
+                        <div style="font-size: 2.5rem; margin-bottom: 10px;">📕</div>
+                        <div style="font-size: 1rem; font-weight: 700; margin-bottom: 5px;">小红书</div>
+                        <div style="font-size: 0.8rem; opacity: 0.9; font-weight: 500;">China</div>
+                    </a>
+                    <a href="https://www.tiktok.com/@exobio.global" target="_blank" style="background: rgba(0, 0, 0, 0.3); border: 2px solid #00F2EA; padding: 20px; border-radius: 15px; text-align: center; text-decoration: none; color: var(--white-primary); transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0, 242, 234, 0.3);">
+                        <div style="font-size: 2.5rem; margin-bottom: 10px;">🎵</div>
+                        <div style="font-size: 1rem; font-weight: 700; margin-bottom: 5px;">TikTok</div>
+                        <div style="font-size: 0.8rem; opacity: 0.9; font-weight: 500;">Global</div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 공식 사이트 & 쇼핑몰 -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-bottom: 50px;">
+                <!-- 공식 사이트 -->
+                <div>
+                    <h3 data-i18n="info_official_sites" style="color: var(--red-primary); font-size: 1.2rem; font-weight: 700; margin-bottom: 20px; text-align: center;">
+                        🌐 공식 사이트
+                    </h3>
+                    <div style="display: flex; flex-direction: column; gap: 12px;">
+                        <a href="https://curetembio.com" target="_blank" style="background: rgba(220, 20, 60, 0.1); border: 1px solid var(--red-primary); padding: 12px 20px; border-radius: 10px; text-decoration: none; color: var(--white-primary); display: flex; align-items: center; justify-content: space-between; transition: all 0.3s ease;">
+                            <span style="display: flex; align-items: center; gap: 10px;">
+                                <span style="font-size: 1.5rem;">🇰🇷</span>
+                                <span style="font-weight: 600;">KR</span>
+                            </span>
+                            <span style="color: var(--white-secondary); font-size: 0.9rem;">curetembio.com</span>
+                        </a>
+                        <a href="https://en.curetembio.com" target="_blank" style="background: rgba(220, 20, 60, 0.1); border: 1px solid var(--red-primary); padding: 12px 20px; border-radius: 10px; text-decoration: none; color: var(--white-primary); display: flex; align-items: center; justify-content: space-between; transition: all 0.3s ease;">
+                            <span style="display: flex; align-items: center; gap: 10px;">
+                                <span style="font-size: 1.5rem;">🇺🇸</span>
+                                <span style="font-weight: 600;">EN</span>
+                            </span>
+                            <span style="color: var(--white-secondary); font-size: 0.9rem;">en.curetembio.com</span>
+                        </a>
+                        <a href="https://jp.curetembio.com" target="_blank" style="background: rgba(220, 20, 60, 0.1); border: 1px solid var(--red-primary); padding: 12px 20px; border-radius: 10px; text-decoration: none; color: var(--white-primary); display: flex; align-items: center; justify-content: space-between; transition: all 0.3s ease;">
+                            <span style="display: flex; align-items: center; gap: 10px;">
+                                <span style="font-size: 1.5rem;">🇯🇵</span>
+                                <span style="font-weight: 600;">JP</span>
+                            </span>
+                            <span style="color: var(--white-secondary); font-size: 0.9rem;">jp.curetembio.com</span>
+                        </a>
+                        <a href="https://cn.curetembio.com" target="_blank" style="background: rgba(220, 20, 60, 0.1); border: 1px solid var(--red-primary); padding: 12px 20px; border-radius: 10px; text-decoration: none; color: var(--white-primary); display: flex; align-items: center; justify-content: space-between; transition: all 0.3s ease;">
+                            <span style="display: flex; align-items: center; gap: 10px;">
+                                <span style="font-size: 1.5rem;">🇨🇳</span>
+                                <span style="font-weight: 600;">CN</span>
+                            </span>
+                            <span style="color: var(--white-secondary); font-size: 0.9rem;">cn.curetembio.com</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 공식 쇼핑몰 -->
+                <div>
+                    <h3 data-i18n="info_shopping" style="color: var(--red-primary); font-size: 1.2rem; font-weight: 700; margin-bottom: 20px; text-align: center;">
+                        🛍️ 공식 쇼핑몰
+                    </h3>
+                    <div style="display: flex; flex-direction: column; gap: 12px;">
+                        <a href="https://exobio.net" target="_blank" style="background: rgba(220, 20, 60, 0.1); border: 1px solid var(--red-primary); padding: 12px 20px; border-radius: 10px; text-decoration: none; color: var(--white-primary); display: flex; align-items: center; justify-content: space-between; transition: all 0.3s ease;">
+                            <span style="display: flex; align-items: center; gap: 10px;">
+                                <span style="font-size: 1.5rem;">🇯🇵</span>
+                                <span style="font-weight: 600;">JP</span>
+                            </span>
+                            <span style="color: var(--white-secondary); font-size: 0.9rem;">exobio.net</span>
+                        </a>
+                        <a href="https://kr.exobio.net" target="_blank" style="background: rgba(220, 20, 60, 0.1); border: 1px solid var(--red-primary); padding: 12px 20px; border-radius: 10px; text-decoration: none; color: var(--white-primary); display: flex; align-items: center; justify-content: space-between; transition: all 0.3s ease;">
+                            <span style="display: flex; align-items: center; gap: 10px;">
+                                <span style="font-size: 1.5rem;">🇰🇷</span>
+                                <span style="font-weight: 600;">KR</span>
+                            </span>
+                            <span style="color: var(--white-secondary); font-size: 0.9rem;">kr.exobio.net</span>
+                        </a>
+                        <a href="https://en.exobio.net" target="_blank" style="background: rgba(220, 20, 60, 0.1); border: 1px solid var(--red-primary); padding: 12px 20px; border-radius: 10px; text-decoration: none; color: var(--white-primary); display: flex; align-items: center; justify-content: space-between; transition: all 0.3s ease;">
+                            <span style="display: flex; align-items: center; gap: 10px;">
+                                <span style="font-size: 1.5rem;">🇺🇸</span>
+                                <span style="font-weight: 600;">EN</span>
+                            </span>
+                            <span style="color: var(--white-secondary); font-size: 0.9rem;">en.exobio.net</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI 피부진단 공식 사이트 -->
+            <div style="background: linear-gradient(135deg, rgba(220, 20, 60, 0.2), rgba(139, 92, 246, 0.2)); border: 3px solid var(--red-primary); border-radius: 20px; padding: 40px; margin-bottom: 50px; text-align: center; box-shadow: 0 8px 30px rgba(220, 20, 60, 0.4);">
+                <div style="font-size: 3rem; margin-bottom: 15px;">🔬</div>
+                <h3 data-i18n="info_diagnosis_title" style="color: var(--white-primary); font-size: 1.5rem; font-weight: 900; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px;">
+                    AI 피부진단 공식 사이트
+                </h3>
+                <a href="https://curetembio.xyz/" target="_blank" style="display: inline-block; background: var(--red-primary); color: var(--white-primary); padding: 15px 40px; border-radius: 50px; font-size: 1.2rem; font-weight: 700; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 5px 20px rgba(220, 20, 60, 0.5); margin-top: 10px;">
+                    curetembio.xyz
+                    <span style="margin-left: 10px;">→</span>
+                </a>
+                <p data-i18n="info_diagnosis_desc" style="color: var(--white-secondary); font-size: 0.9rem; margin-top: 15px; line-height: 1.6;">
+                    AI 기반 10가지 피부 지표 분석 시스템
+                </p>
+            </div>
+
+            <!-- FAQ 섹션: v30.0에서 고객 피드백 반영 후 재추가 예정 -->
+            <!-- SEO Schema.org 메타데이터는 상단 <head>에 유지됨 -->
+
+            <!-- 연락처 -->
+            <div style="background: rgba(220, 20, 60, 0.1); border: 2px solid var(--red-primary); border-radius: 15px; padding: 30px; text-align: center;">
+                <h3 data-i18n="info_contact_title" style="color: var(--red-primary); font-size: 1.3rem; font-weight: 700; margin-bottom: 15px;">
+                    📧 연락처
+                </h3>
+                <p data-i18n="info_contact_email_label" style="color: var(--white-secondary); margin-bottom: 10px; font-size: 0.95rem;">공식 이메일:</p>
+                <a href="mailto:curetembio@gmail.com" style="color: var(--white-primary); font-size: 1.2rem; font-weight: 600; text-decoration: none; display: inline-block; padding: 10px 20px; background: rgba(255, 255, 255, 0.05); border-radius: 8px; transition: all 0.3s ease;">
+                    curetembio@gmail.com
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 저작권 (Footer 밖으로 이동) -->
+    <div style="text-align: center; padding: 20px; background: rgba(0, 0, 0, 0.5);">
+        <p data-i18n="info_copyright" style="color: var(--white-secondary); font-size: 0.85rem; line-height: 1.6; margin: 0;">
+            © 2024 CURETEMBIO. All Rights Reserved.
+        </p>
+    </div>
+
+    <style>
+        /* Footer 호버 효과 */
+        footer a:hover {
+            background: rgba(220, 20, 60, 0.2) !important;
+            border-color: var(--red-primary) !important;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(220, 20, 60, 0.3);
+        }
+
+        footer a:active {
+            transform: translateY(0);
+        }
+
+        /* 모바일 최적화 */
+        @media (max-width: 768px) {
+            footer {
+                padding: 40px 15px 30px;
+                margin-top: 60px;
+            }
+        }
+    </style>
+</body>
+</html>

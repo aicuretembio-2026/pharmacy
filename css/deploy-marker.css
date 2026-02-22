@@ -1,0 +1,8 @@
+/* V25.0 FINAL - 2026-02-02 23:59 */
+/* 배포 확인용 더미 파일 */
+/* 이 파일은 배포 감지를 위한 변경 사항입니다 */
+
+.dummy-class-for-deploy-v25-final {
+    display: none;
+    content: "V25.0 FINAL - 9 Languages Support";
+}

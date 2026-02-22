@@ -1,0 +1,52 @@
+{
+  "name": "CURETEMBIO - AI 기반 10가지 피부진단 시스템",
+  "short_name": "CURETEMBIO",
+  "description": "피부과에서 시작해 약국이 인정한 스킨케어 UP 첫단계 357™ 앰플 피부진단",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "images/logo-white.png",
+      "sizes": "200x200",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/logo-white.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["health", "medical", "beauty"],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "피부 촬영",
+      "short_name": "촬영",
+      "description": "카메라로 피부 촬영하기",
+      "url": "/?page=capture",
+      "icons": [
+        {
+          "src": "images/logo-white.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "분석 기록",
+      "short_name": "기록",
+      "description": "피부 변화 기록 보기",
+      "url": "/?page=history",
+      "icons": [
+        {
+          "src": "images/logo-white.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}
